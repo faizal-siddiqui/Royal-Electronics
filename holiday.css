@@ -1,3 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+}body{
+    font-family: sans-serif;
+}
+
 #holiday{
     display: flex;
     width: 99%;
@@ -66,7 +75,7 @@ border: 0.5px solid teal;
     #deal{
         display: flex;
         border: 0px solid red;
-        width: 86%;
+        width: 94%;
         margin: auto;
     
         height: 160px;  
@@ -85,16 +94,18 @@ border: 0.5px solid teal;
         font-size: 12px;
         line-height: 15px;
         margin-top: 30px;
+    }#deal h5{
+        margin-top: 20px;
     }
     
     #deal1{
         border: 0px solid black;
         width: 180px;
     }#deal2{
-        margin-left: 30px;
+        margin-left: 0px;
         border: 0px solid teal;
-        width:140px;
-        padding-left:30px;
+        width:180px;
+        padding-left:20px;
         border-left: 2px solid white;
     }#deal button{
         height: 20px;
@@ -110,6 +121,7 @@ border: 0.5px solid teal;
         margin-top: 20px;
     }#deal h1{
         color: yellow;
+        margin-top: 20px;
     }#main4{
         height: 200px;
         width: 98%;
@@ -132,7 +144,7 @@ border: 0.5px solid teal;
     }#img1{
         width: 70px;
     }#main123{
-        margin-top: -10px;
+        margin-top: 0px;
         display: flex;
         width: 100%;
         justify-content: space-between;
