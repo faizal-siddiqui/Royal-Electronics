@@ -53,10 +53,7 @@ function aieadisplay() {
 
 aieadisplay();
 
-// function close_aiea_dropdown(){
-// }
 
-// close_aiea_dropdown()
 
 // TOPBAR
 
@@ -198,18 +195,6 @@ function savedItemsDropdown() {
 }
 
 savedItemsDropdown();
-
-// let ham_three_lines = document.getElementById("ham_three_lines");
-// let ham_cross_lines = document.getElementById("ham_cross_lines");
-// let menu_dropdown = document.querySelector(".menu_dropdown");
-// let aiea_dropdowns = document.querySelector(".aiea_dropdown");
-// let more_deals_dropdown = document.getElementById("more_deals_dropdown");
-// let accounts_dropdown = document.getElementById("accounts_dropdown");
-// let recently_viewed_dropdown = document.getElementById(
-//   "recently_viewed_dropdown"
-// );
-// let order_status_dropdown = document.getElementById("order_status_dropdown");
-// let saved_items_dropdown = document.getElementById("saved_items_dropdown");
 
 function alldropdownClose() {
   let ham_three_lines = document.getElementById("ham_three_lines");
