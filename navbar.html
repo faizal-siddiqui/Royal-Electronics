@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- // important links -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/topbar.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+
+    <nav id="navbar">
+      <div class="navbar_left">
+        <div>
+          <img class="logo" src="./images/logo.png" alt="" />
+        </div>
+
+        <div class="ham">
+          <img
+            id="ham_three_lines"
+            class="ham_icons"
+            src="./images/threelines.png"
+            alt=""
+          />
+          <img
+            id="ham_cross_lines"
+            class="ham_icons"
+            src="./images/cross.png"
+            alt=""
+          />
+          <div class="menu_dropdown">
+            <!-- <div id="upper_rotate_pointer"></div> -->
+            <div class="upper_menu_dropdown">
+              <div>
+                <a href="">Deals</a>
+                <div class="upper_menu_dropdown_icon"></div>
+              </div>
+              <div>
+                <a href="">Supports ans services</a>
+                <div class="upper_menu_dropdown_icon"></div>
+              </div>
+              <div>
+                <a href="">Brands</a>
+                <div class="upper_menu_dropdown_icon"></div>
+              </div>
+              <div>
+                <a href="">Featured</a>
+                <div class="upper_menu_dropdown_icon"></div>
+              </div>
+            </div>
+
+            <div class="lower_menu_dropdown">
+              <div><h4 style="color: black">Shop by Department</h4></div>
+              <div>
+                <a href="">Appliances</a>
+                <div class="upper_menu_dropdown_icon"></div>
+              </div>
+              <div>
+                <a href="">TV & Home Theatre</a>
+                <div class="upper_menu_dropdown_icon"></div>
+              </div>
+              <div>
+                <a href="">Computers & Tablets</a>
+                <div class="upper_menu_dropdown_icon"></div>
+              </div>
+              <div>
+                <a href="">Cameras, Camcorders & Drones</a>
+                <div class="upper_menu_dropdown_icon"></div>
+              </div>
+              <div>
+                <a href="">Cell Phones</a>
+                <div class="upper_menu_dropdown_icon"></div>
+              </div>
+              <div>
+                <a href="">Audio</a>
+                <div class="upper_menu_dropdown_icon"></div>
+              </div>
+              <div>
+                <a href="">Video Games</a>
+                <div class="upper_menu_dropdown_icon"></div>
+              </div>
+              <div>
+                <a href="">Movies & Musics</a>
+                <div class="upper_menu_dropdown_icon"></div>
+              </div>
+              <div>
+                <a href="">Car, Electronics & GPS</a>
+                <div class="upper_menu_dropdown_icon"></div>
+              </div>
+              <div>
+                <a href="">Wearable Technology</a>
+                <div class="upper_menu_dropdown_icon"></div>
+              </div>
+              <div>
+                <a href="">Health & Wellness</a>
+                <div class="upper_menu_dropdown_icon"></div>
+              </div>
+              <div>
+                <a href="">Sports, Fitness & Recreation</a>
+                <div class="upper_menu_dropdown_icon"></div>
+              </div>
+              <div>
+                <a href="">Home, Furniture & Office</a>
+                <div class="upper_menu_dropdown_icon"></div>
+              </div>
+              <div>
+                <a href="">Smart home, Security & Wifi</a>
+                <div class="upper_menu_dropdown_icon"></div>
+              </div>
+              <div>
+                <a href="">Outdoor Living</a>
+                <div class="upper_menu_dropdown_icon"></div>
+              </div>
+              <div>
+                <a href="">Toys, Games & Collectibles</a>
+                <div class="upper_menu_dropdown_icon"></div>
+              </div>
+              <div>
+                <a href="">Sustainable Living</a>
+                <div class="upper_menu_dropdown_icon"></div>
+              </div>
+              <div>
+                <a href=""><span class="cross_sign">✖</span> Close</a>
+                <div class="upper_menu_dropdown_icon"></div>
+              </div>
+            </div>
+          </div>
+          <h4>Menu</h4>
+        </div>
+
+        <div class="search">
+          <input type="text" placeholder="Search Best Buy" />
+          <div>
+            <i id="search_icon" class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar_right">
+        <div>
+          <div id="aiea_dropdown_btn">
+            <img src="./images/nav_aiea.png" alt="" />
+            <h4>Aiea</h4>
+          </div>
+
+          <div class="aiea_dropdown">
+            <div id="rotate_pointer"></div>
+            <div class="aiea_cross">
+              <h5 id="aiea_head">Aiea</h5>
+              <h5 id="close_aiea_dropdown">╳</h5>
+            </div>
+            <div class="time">
+              <p id="time_color">Open until 9 pm</p>
+              <p><a href="">popular times</a></p>
+            </div>
+            <div><p>10:00 am: Often busier than usual</p></div>
+            <div class="graph"></div>
+            <div id="aiea_address">
+              <p>98-051 Kamehameha Hwy Aiea, HI 96701</p>
+            </div>
+            <div><a href="">show details</a></div>
+            <div><button class="aiea_button">Find Another Store</button></div>
+          </div>
+        </div>
+
+        <div>
+          <img src="./images/nav_cart.png" alt="" />
+          <h4>Cart</h4>
+        </div>
+      </div>
+    </nav>
+
+    <!-- TOPBAR -->
+
+    <div id="topbar">
+      <div>
+        <div id="holiday_dropdown_btn">
+          <p>Holiday Deals</p>
+          <i class="material-icons">expand_more</i>
+        </div>
+        <div id="holiday_deals_dropdown">
+          <div id="holiday_pointer" class="pointer"></div>
+          <div>
+            <div>
+              <a href="">Black Friday Deals Right Now</a>
+            </div>
+            <div>
+              <a href="">Gift Ideas</a>
+            </div>
+            <div>
+              <a href="">Gift Cards</a>
+            </div>
+            <div>
+              <a href="">Toy Guide 2022</a>
+            </div>
+            <div>
+              <a href="">Explore Holiday Inspirations</a>
+            </div>
+            <div>
+              <a href="">Holiday FAQs</a>
+            </div>
+            <div>
+              <a href="">╳ Close</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div><p>Top Deals</p></div>
+      </div>
+      <div>
+        <div><p>Deal of the Day</p></div>
+      </div>
+      <div>
+        <div><p>Total Membership</p></div>
+      </div>
+      <div>
+        <div><p>Credit Cards</p></div>
+      </div>
+      <div>
+        <div id="more_deals_btn">
+          <p>More</p>
+          <i class="material-icons">expand_more</i>
+        </div>
+        <div id="more_deals_dropdown">
+          <div id="more_pointer" class="pointer"></div>
+          <div>
+            <div>
+              <a href="">Health and Wellness</a>
+            </div>
+            <div>
+              <a href="">Gift Ideas</a>
+            </div>
+            <div>
+              <a href="">Gift Cards</a>
+            </div>
+            <div>
+              <a href="">Donate to St. Dude</a>
+            </div>
+            <div>
+              <a href="">Best Buy Outlet</a>
+            </div>
+            <div>
+              <a href="">Best Buy Business</a>
+            </div>
+            <div>
+              <a href="">╳ Close</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="accounts">
+        <div id="accounts_btn">
+          <img src="./images/accounts.png" alt="" />
+          <p>Account</p>
+          <i class="material-icons">expand_more</i>
+        </div>
+        <div id="accounts_dropdown">
+          <!-- <div id="accounts_pointer" class="pointer"></div> -->
+          <div class="accounts_login">
+            <p>
+              Becoming a My Best Buy® member comes with easy order tracking,
+              rewards, offers and more.
+            </p>
+            <button id="topbar_signin">Sign In</button>
+            <button id="topbar_create_account">Create Account</button>
+          </div>
+          <div class="accounts_first_part">
+            <div>
+              <a href="">Account</a>
+              <p>Your info at a glance</p>
+            </div>
+            <div>
+              <a href="">Orders & Purchases</a>
+              <p>Track, change, cancel</p>
+            </div>
+            <div>
+              <a href="">Your Products</a>
+              <p>Support, manuals, guides</p>
+            </div>
+          </div>
+          <div class="accounts_second_part">
+            <div>
+              <a href="">Payment Methods</a>
+              <p>Saved credit cards</p>
+            </div>
+            <div>
+              <a href="">Protection Plan & Subscription</a>
+            </div>
+            <div>
+              <a href="">Digital Library</a>
+              <p>Your downloads</p>
+            </div>
+          </div>
+          <div class="accounts_third_part">
+            <div>
+              <a href="">Best Buy Totaltech</a>
+            </div>
+            <div>
+              <a href="">Free Home Consultation</a>
+            </div>
+            <div>
+              <a href="">Member Offers</a>
+            </div>
+          </div>
+          <div class="accounts_fourth_part">
+            <div>
+              <a href="">Account Settings</a>
+              <p>Addresses, password, preferences</p>
+            </div>
+            <div>
+              <a href="">╳ Close</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div id="recently_viewed_btn">
+          <p>Recently Viewed</p>
+          <i class="material-icons">expand_more</i>
+        </div>
+        <div id="recently_viewed_dropdown">
+          <div id="recently_viewed_pointer" class="pointer"></div>
+          <div class="recently_viewed_head">
+            <i class="material-icons">history</i>
+            <div>
+              <h3>Recently Viewed</h3>
+            </div>
+            <hr />
+            <a href="">Manage all your recently viewed items ›</a>
+            <p id="recently_viewed_close">╳</p>
+          </div>
+          <div class="recently_viewed_bottom">
+            <div>
+              <div>
+                <h3>You don't have any recently viewed items ›</h3>
+                <p>
+                  <a href="">Sign in</a> or <a href="">create an account</a> to
+                  see your stuff on all your devices
+                </p>
+              </div>
+              <div>
+                <img
+                  src="https://pisces.bbystatic.com/image2/BestBuy_US/en_US/images/abn/2015/global/qa2/sh_zs_bs_v2.png;maxHeight=992;maxWidth=260"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+      <div>
+        <div id="order_status_btn">
+          <p>Order Status</p>
+          <i class="material-icons">expand_more</i>
+        </div>
+        <div id="order_status_dropdown">
+          <div id="order_status_pointer" class="pointer"></div>
+          <div class="order_status_head">
+            <img src="./images/box.png" alt="" />
+
+            <h3>Order Status</h3>
+
+            <p id="order_status_close">╳</p>
+          </div>
+          <div class="order_status_bottom">
+            <div>
+              <div>
+                <h3>Hi there! Looking for a current order?</h3>
+                <p>You'll need to sign in or have your order number handy.</p>
+                <button>Continue</button>
+              </div>
+              <div>
+                <img
+                  src="https://pisces.bbystatic.com/image2/BestBuy_US/en_US/images/abn/2015/global/qa2/sh_zs_bs_v2.png;maxHeight=992;maxWidth=260"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div id="saved_items_btn">
+          <p>Saved Items</p>
+          <i class="material-icons">expand_more</i>
+        </div>
+        <div id="saved_items_dropdown">
+          <div id="saved_items_pointer" class="pointer"></div>
+          <div class="saved_items_head">
+            <img src="./images/saved_items.png" alt="" />
+            <h3>Saved Items</h3>
+            <a href="">See all yout saved items</a>
+            <p id="saved_items_close">╳</p>
+          </div>
+          <div class="saved_items_bottom">
+            <div>
+              <div>
+                <h3>Looks like you don't have anything saved...</h3>
+                <p>When you see something you like, hit "save" and we'll keep track of it here.</p>
+                <p>Sign in or create an account to see your stuff on all your devices.</p>
+                
+              </div>
+              <div>
+                <img
+                  src="https://pisces.bbystatic.com/image2/BestBuy_US/en_US/images/abn/2015/global/qa2/sh_zs_bs_v2.png;maxHeight=992;maxWidth=260"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+<script src="./scripts/navbar.js"></script>

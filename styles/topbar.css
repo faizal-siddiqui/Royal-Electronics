@@ -1,0 +1,566 @@
+/* TOPBAR */
+
+#topbar{
+    border-top: 1px solid #3b79e2;
+    display: flex;
+    background-color: #0046be;
+    padding-bottom: 7px;
+    position: relative;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+#topbar a:hover{
+    text-decoration: underline;
+}
+
+#topbar > div, #topbar > div > div{
+    display: flex;
+    display: flex;
+    align-items: center;
+    
+}
+
+#topbar > div > div{
+    cursor: pointer;
+}
+
+#topbar > div > div > p{
+    font-size: 11px;
+    color: #fff;
+    
+}
+
+#topbar > div > div > i{
+    font-size: 13px;
+    color: #fff;
+}
+
+#topbar > div > div > img{
+    width: 20%;
+    /* display: flex;
+    align-items: center; */
+}
+
+#topbar > div > div:nth-child(1){
+    margin-left: 28px;
+    margin-top: 8px;
+}
+
+#accounts{
+    margin-left: 1vw;
+}
+
+/* HOLIDAY DEALS DROPDOWN */
+
+#topbar > div > #holiday_deals_dropdown{
+    position: absolute;
+    top: 100%;
+    left: 2%;
+    background-color: #fff;
+    /* border: 2px solid red; */
+    padding: 10px;
+    width: 25%;
+    display: none;
+}
+
+#holiday_deals_dropdown > div > div{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.142);
+    padding: 10px;
+}
+
+#holiday_deals_dropdown > div:nth-child(1) ~ div{
+    width: 100%;
+}
+
+#holiday_deals_dropdown > div > div:last-child{
+    border-bottom: none;
+}
+
+#holiday_deals_dropdown > div a{
+    text-decoration: none;
+    color: #0046be;
+    font-size: 13px;
+}
+
+.pointer{
+    transform: rotate(45deg);
+    width: 5%;
+    height: 9px;
+    position: absolute;
+    
+    background-color: white;
+}
+
+#holiday_pointer{
+    top: -3px;
+    left: 30%;
+}
+
+
+/* MORE DROPDOWN */
+#topbar > div > #more_deals_dropdown{
+    position: absolute;
+    top: 100%;
+    left: 40.5%;
+    background-color: #fff;
+    /* border: 2px solid red; */
+    padding: 10px;
+    width: 25%;
+    display: none;
+}
+
+
+#more_deals_dropdown > div > div{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.142);
+    padding: 10px;
+}
+
+#more_deals_dropdown > div:nth-child(1) ~ div{
+    width: 100%;
+}
+
+#more_deals_dropdown > div > div:last-child{
+    border-bottom: none;
+}
+
+#more_deals_dropdown > div a{
+    text-decoration: none;
+    color: #0046be;
+    font-size: 13px;
+}
+
+#more_pointer{
+    top: -3px;
+    left: 53%;
+    
+}
+
+/* ACCOUNTS DROPDOWN */
+#topbar > div > #accounts_dropdown{
+    position: absolute;
+    top: 100%;
+    left: 56.3%;
+    background-color: rgba(128, 128, 128, 0.091);
+    /* border: 2px solid red; */
+    /* padding: 10px; */
+    width: 30%;
+    height: 100vh;
+    display: block;
+    overflow-y: scroll;
+    display: none;
+}
+
+
+#accounts_dropdown > div > div{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.142);
+    padding: 10px;
+    background-color: #fff;
+}
+
+#accounts_dropdown >div{
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 7px;
+}
+
+#accounts_dropdown > div > div:last-child{
+    border-bottom: none;
+
+}
+
+#accounts_dropdown > div a{
+    text-decoration: none;
+    color: #0046be;
+    font-size: 13px;
+    background-color: #fff;
+}
+
+#accounts_pointer{
+    top: -3px;
+    left: 33%;
+    /* z-index: 35; */
+    background-color: #fff;
+}
+
+#accounts_dropdown > div{
+    padding: 10px;
+}
+
+#accounts_dropdown > .accounts_login{
+    /* border: 1px solid red; */
+    padding: 25px;
+}
+
+#accounts_dropdown > .accounts_login > p{
+    /* border: 1px solid red; */
+    font-size: 11px;
+    color: rgb(105, 103, 103);
+}
+
+#accounts_dropdown > .accounts_login button{
+    width: 100%;
+    border-radius: 3px;
+    margin-top: 8px;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px 5px;
+    border: 1px solid #0046be;
+}
+
+#topbar_signin{
+    background-color: #0046be;
+    color: #fff;
+}
+
+#topbar_signin:hover{
+    background-color: #14235e;
+    transition: 0.5s;
+}
+
+
+#topbar_create_account{
+    background-color: #fff;
+    color: #0046be;
+}
+
+
+#topbar_create_account:hover{
+    background-color: #14235e;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#accounts_dropdown > div:nth-child(1) ~ div > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+#accounts_dropdown p{
+    font-size: 10px;
+    color: rgb(105, 103, 103);
+}
+
+
+/* RECENTLY VIEWED DROPDOWN */
+#topbar > div > #recently_viewed_dropdown{
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    background-color: #fff;
+    /* border: 2px solid red; */
+    display: block;
+    padding: 10px;
+    width: 70%;
+    height: 60vh;
+    display: none;
+}
+
+.recently_viewed_head{
+    display: flex;
+    justify-content: space-around;
+
+}
+.recently_viewed_head h3{
+    text-align: center;
+    font-size: 23px;
+}
+.recently_viewed_head hr{
+    margin: 0px 7px;
+}
+.recently_viewed_head p, h3, i{
+    display: flex;
+    align-items: center;
+    /* margin-left: 35%; */
+}
+
+.recently_viewed_head p:hover{
+    color: red;
+}
+
+.recently_viewed_head a{
+   display: flex;
+   align-items: center;
+   font-size: 12px;
+   text-decoration: none;
+   color: #0046be;
+}
+.recently_viewed_head i{
+   display: flex;
+   align-items: center;
+   font-size: 35px;
+}
+
+
+
+#recently_viewed_dropdown > .recently_viewed_bottom{
+    display: flex;
+}
+.recently_viewed_bottom{
+    display: flex;
+}
+
+.recently_viewed_bottom img{
+    width: 70%;
+    margin-top: 10px;
+}
+
+.recently_viewed_bottom > div > div:nth-child(1){
+    /* border: 2px solid red; */
+    width: 30%;
+    padding: 10px 0px 0px 10px;
+}
+
+.recently_viewed_bottom > div > div:nth-child(1) p{
+    margin-top: 20%;
+    font-size: 14px;
+}
+
+.recently_viewed_bottom > div > div:nth-child(1) > p > a{
+    color: #0046be;
+    text-decoration: none;
+}
+.recently_viewed_bottom > div > div:nth-child(2){
+    /* border: 2px solid red; */
+    margin-left: 20%;
+}
+
+
+#topbar > div > #recently_viewed_dropdown > div:nth-child(2){
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 10px 10px;
+}
+#topbar > div > #recently_viewed_dropdown > div:nth-child(3) > div{
+    /* border: 2px solid black; */
+    display: flex;
+}
+
+
+
+#topbar > div > div>  #recently_viewed_pointer{
+    top:5px;
+    left: 76.3%;
+}
+
+
+/* ORDER STAUS DROPDOWN */
+#topbar > div > #order_status_dropdown{
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    background-color: #fff;
+    /* border: 2px solid red; */
+    display: block;
+    padding: 10px;
+    width: 70%;
+    height: 60vh;
+    display: none;
+}
+
+
+
+.order_status_head{
+    display: flex;
+    /* justify-content: space-around; */
+    padding: 10px;
+
+}
+.order_status_head h3{
+    text-align: center;
+    font-size: 23px;
+}
+
+.order_status_head p{
+    display: flex;
+    align-items: center;
+    margin-left: 65%;
+}
+
+.order_status_head p:hover{
+    color: red;
+}
+
+.order_status_head img{
+   display: flex;
+   align-items: center;
+   width: 6%;
+   margin-right: 10px;
+}
+.order_status_head i{
+   display: flex;
+   align-items: center;
+   font-size: 35px;
+}
+
+
+
+#order_status_dropdown > .order_status_bottom{
+    display: flex;
+}
+.order_status_bottom{
+    display: flex;
+    justify-content: center;
+}
+
+.order_status_bottom img{
+    width: 50%;
+    margin-top: 10px;
+}
+
+.order_status_bottom > div > div:nth-child(1){
+    /* border: 2px solid red; */
+    width: 50%;
+    padding: 10px 0px 0px 10px;
+    margin: auto;
+}
+
+.order_status_bottom > div > div:nth-child(1) > button{
+    width: 100%;
+    padding: 6px 5px;
+    background-color: #0046be;
+    border: none;
+    color: #fff;
+}
+
+.order_status_bottom > div > div:nth-child(1) > button:hover{
+    background-color: #14235e;
+    transition: 1s;
+}
+
+.order_status_bottom > div > div:nth-child(1) p{
+    font-size: 12px;
+    color: rgb(98, 97, 97);
+    margin-bottom: 10px;
+}
+
+.order_status_bottom > div > div:nth-child(1) >  h3{
+    font-size: xx-large;
+    margin-bottom: 10px;
+}
+
+
+#topbar > div > #order_status_dropdown > div:nth-child(2){
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 10px 10px;
+}
+#topbar > div > #order_status_dropdown > div:nth-child(3) > div{
+    /* border: 2px solid black; */
+    display: flex;
+}
+
+
+
+#topbar > div > div>  #order_status_pointer{
+    top:5px;
+    left: 90.7%;
+}
+
+
+/* SAVED ITEMS */
+
+#topbar > div > #saved_items_dropdown{
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    background-color: #fff;
+    /* border: 2px solid red; */
+    display: block;
+    padding: 10px;
+    width: 70%;
+    height: auto;
+    display: none;
+}
+
+
+
+.saved_items_head{
+    display: flex;
+    /* justify-content: space-around; */
+    padding: 10px;
+
+}
+.saved_items_head h3{
+    font-size: 23px;
+}
+
+.saved_items_head p:hover{
+    color: red;
+}
+
+.saved_items_head img{
+   display: flex;
+   align-items: center;
+   width: 5%;
+   margin-right: 10px;
+}
+.saved_items_head i, a, h3, img{
+   display: flex;
+   align-items: center;
+}
+.saved_items_head i{
+   font-size: 35px;
+}
+.saved_items_head a{
+   font-size: 12px;
+   margin-left: 10px;
+   text-decoration: none;
+   color: #0046be;
+}
+
+
+#saved_items_close{
+    margin-left: 50%;
+}
+
+
+
+#saved_items_dropdown > .saved_items_bottom{
+    display: flex;
+}
+.saved_items_bottom{
+    display: flex;
+    justify-content: center;
+}
+
+.saved_items_bottom img{
+    width: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.saved_items_bottom > div > div:nth-child(1){
+    /* border: 2px solid red; */
+    width: 50%;
+    padding: 10px 0px 0px 10px;
+    margin: 5% 0% 5% 14%;
+}
+
+.saved_items_bottom > div > div:nth-child(1) p{
+    font-size: 12px;
+    color: rgb(98, 97, 97);
+    margin-bottom: 10px;
+}
+
+.saved_items_bottom > div > div:nth-child(1) >  h3{
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+
+#topbar > div > #saved_items_dropdown > div:nth-child(2){
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 10px 10px;
+}
+#topbar > div > #saved_items_dropdown > div:nth-child(3) > div{
+    display: flex;
+}
+
+
+
+#topbar > div > div>  #saved_items_pointer{
+    top:5px;
+    left: 98%;
+}
