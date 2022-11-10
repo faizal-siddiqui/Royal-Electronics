@@ -7,6 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      }
+    body{
+    font-family: sans-serif;
+    }
         #featured{
             height: 400px;
         }
@@ -20,6 +28,8 @@
             /* border: 1px solid blue; */
             border-top: 1px solid grey;
             height: 90%;
+            width: 97%;
+            margin: auto;
             display: flex;
             justify-content: space-between;
         }
@@ -74,14 +84,15 @@
             background-color: #f0f2f4;
             border: 1px solid #d3d8df;
             display: flex;
+            line-height: 1.3;
         }
         #giftShop>div>div>img{
             width: 80px;
             height: 80px;
         }
         #giftShop>div>div{
-            line-height: 4px;
-            margin-top: 7px;
+            /* line-height: 4px; */
+            margin-top: 9px;
             margin-left: 7px;
         }
         #giftShop>div>div>h2{
@@ -99,6 +110,15 @@
             text-decoration: underline;
             color: #001e73;
         }
+        a{
+            font-size: 15px;
+            text-decoration: none;
+            color: #0457c8; 
+        }
+        a:hover{
+            text-decoration: underline;
+            color: #001e73;
+        }
         #gift{
             padding-left: 20%;
         }
@@ -108,6 +128,9 @@
         #delivery{
             display: flex;
             justify-content: space-between;
+            width: 92%;
+            margin: auto;
+            margin-bottom: 30px;
         }
         #delivery>div{
             display: flex;
@@ -128,18 +151,267 @@
             font-size: 15px;
             color: #1d252c;
         }
+        .paraPadding{
+            padding-top: 15px;
+            padding-left: 20px;
+            line-height: 1.3;
+        }
+        .hrleft{
+            border-left: 1px solid #a4a4a7;
+            padding-left: 50px;
+        }
+
+        /*product  slider  */
+        .product {
+            position: relative;
+            /* overflow: hidden; */
+            padding: 20px;
+            padding-top: 35px;
+            /* border: 1px solid red; */
+            width: 97%;
+            margin: auto;
+            border-top: 1px solid #a4a4a7;
+        }
+
+        .product-category {
+            padding: 0 10px;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 40px;
+            /* text-transform: capitalize; */
+        }
+
+        .product-container{
+            padding: 0 10vw;
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
+
+        .product-container::-webkit-scrollbar{
+            display: none;
+        }
+
+        .product-card{
+            flex: 0 0 auto;
+            width: 220px;
+            height: 250px;
+            margin-right: 20px;
+        }
+
+        .product-image{
+            position: relative;
+            width: 100%;
+            height: 150px;
+        }
+
+        .product-thumb{
+            width: 70%;
+            height: 100px;
+            margin: auto;
+        }
+
+        .product-short-description {
+            width: 100%;
+            height: 20px;
+            line-height: 20px;
+            overflow-wrap: break-word;
+            opacity: 0.5;
+            margin: 5px 0;
+        }
+
+        .price{
+            font-weight: 900;
+            font-size: 20px;
+        }
+
+        .actual-price {
+            /* opacity: 0.5; */
+            color: #434a50;
+            text-decoration: line-through;
+        }
+
+        .pre-btn,
+        .nxt-btn{
+            border: none;
+            width: 20px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+            cursor: pointer;
+            z-index: 9;
+        }
+
+        .pre-btn{
+            left: 0;
+            transform: rotate(180deg);
+            margin-left: 0px;
+        }
+        .nxt-btn {
+            right: 0;
+        }
+
+        .headingSpan{
+            font-size: 15px;
+            color: #1d252c;
+            font-weight: lighter;
+        }
+
+        .headingMargin{
+            font-size: 20px;
+            margin: 20px 0px 10px 10px;
+        }
+
+        #samsungProducts{
+            width: 97%;
+            margin: auto;
+            height: 350px;
+            /* display: flex; */
+        }
+        #samsungProducts>img{
+            width: 100%;
+            height: 100%;
+        }
+        #samsungLeft{
+            width: 35%;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+        #samsungRight{
+            width: 60%;
+        }
     </style>
 </head>
  
 <body>
     <div id="home3rdSection">
-        <h2>Deals inspired by your shopping </h2>
-        <div></div>
+        <h2 class="headingMargin">Deals inspired by your shopping </h2>
+        <!-- product slider -->
+        <div class="product">
+            <button class="pre-btn"><img src="images/icon-forward.png" alt=""></button>
+            <button class="nxt-btn"><img src="images/icon-forward.png" alt=""></button>
+        
+            <div class="product-container">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img class="product-thumb"
+                            src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6462/6462988_sd.jpg;maxHeight=272;maxWidth=400"
+                            alt="">
+                    </div>
+                    <div class="product-info">
+                        <a href="#">Chefman TurboFry 9 Qt. Digital Touch Dual Basket Air Fryer - Matte Black</a>
+                        <p class="price">$99.99</p>
+                        <!-- <p class="actual-price">$320</p> -->
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img class="product-thumb"
+                            src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6269/6269234_sd.jpg;maxHeight=272;maxWidth=400"
+                            alt="">
+                    </div>
+                    <div class="product-info">
+                        <a href="#">Ninja Air Fryer - Black/Gray</a>
+                        <p class="price">$89.99</p>
+                        <!-- <p class="actual-price">$320</p> -->
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img class="product-thumb"
+                            src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6514/6514052_sd.jpg;maxHeight=272;maxWidth=400"
+                            alt="">
+                    </div>
+                    <div class="product-info">
+                        <a href="#">Samsung - 75" Class TU690T Series LED 4K UHD Smart Tizen TV</a>
+                        <p class="price">$579.99</p>
+                        <p class="actual-price">$600</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img class="product-thumb"
+                            src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6357/6357664_sd.jpg;maxHeight=272;maxWidth=400"
+                            alt="">
+                    </div>
+                    <div class="product-info">
+                        <a href="#">Ninja - Foodi 8-in-1 Digital Air Fry Oven, Toaster, Flip-Away</a>
+                        <p class="price">$177</p>
+                        <p class="actual-price">$230</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img class="product-thumb"
+                            src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6471/6471386_rd.jpg;maxHeight=272;maxWidth=400"
+                            alt="">
+                    </div>
+                    <div class="product-info">
+                        <a href="#">Ninja - Foodi 10-in-1 Smart XL Air Fry Oven - Stainless Silver</a>
+                        <p class="price">279.99</p>
+                        <p class="actual-price">$349</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img class="product-thumb"
+                            src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6507/6507317_sd.jpg;maxHeight=272;maxWidth=400"
+                            alt="">
+                    </div>
+                    <div class="product-info">
+                        <a href="#">Bella Pro Series - 4.2-qt. Digital Air Fryer - Stainless Steel Finish</a>
+                        <p class="price">$39.99</p>
+                        <!-- <p class="actual-price">$320</p> -->
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img class="product-thumb"
+                            src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464584_sd.jpg;maxHeight=240;maxWidth=240"
+                            alt="">
+                    </div>
+                    <div class="product-info">
+                        <a href="#">Samsung - Galaxy Tab A7 Lite 8.7" 32GB with Wi-Fi - Dark Gray</a>
+                        <p class="price">$109.99</p>
+                        <p class="actual-price">$160</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img class="product-thumb"
+                            src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510882_sd.jpg;maxHeight=240;maxWidth=240"
+                            alt="">
+                    </div>
+                    <div class="product-info">
+                        <a href="#">Samsung - Galaxy Watch5 Aluminum Smartwatch 44mm</a>
+                        <p class="price">$279</p>
+                        <!-- <p class="actual-price">$320</p> -->
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img class="product-thumb"
+                            src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6430/6430164_rd.jpg;maxHeight=272;maxWidth=400"
+                            alt="">
+                    </div>
+                    <div class="product-info">
+                        <a href="#">Sony - PULSE 3D Wireless Headset for PS5, PS4, and PC - White</a>
+                        <p class="price">$99.99</p>
+                        <!-- <p class="actual-price">$320</p> -->
+                    </div>
+                </div>
+            </div>
+        
+        </div>
     </div>
  
     <!-- our featured offers -->
     <div id="featured">
-        <h2>Our featured offers</h2>
+        <h2 class="headingMargin">Our featured offers</h2>
         <div id="featuredchild">
             <div>
                 <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_6509653-macbook-pro-MMT-574306-0815-2c6fefe1-d0ed-4399-8b8a-43734c8ab582.jpg;maxHeight=504;maxWidth=740" alt="">
@@ -195,30 +467,276 @@
             <div>
                 <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-app-vpe-freeshippin_der1-206852.png;maxHeight=160;maxWidth=160" alt="">
             </div>
-            <div>
+            <div class="paraPadding">
                 <a href="#">Free next-day delivery</a>
                 <p>on thousands of items.</p>
             </div>
         </div>
-        <div>
+        <div class="hrleft">
             <div>
                 <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-34525-app-vpe-storepickup1-206866.png;maxHeight=160;maxWidth=160" alt="">
             </div>
-            <div>
+            <div class="paraPadding">
                 <a href="#">Ready in one hour</a>
                 <p>with Store or Curbside Pickup.</p>
             </div>
         </div>
-        <div>
+        <div class="hrleft">
             <div>
                 <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-app-vpe-freeshippin_der1-206852.png;maxHeight=160;maxWidth=160" alt="">
             </div>
-            <div>
+            <div class="paraPadding">
                 <a href="#">Same-day delivery.</a>
             </div>
+            </div>
+            </div>
+            <!-- PRODUCT SLIDER -->
+            <h2 class="headingMargin">You may also like <span class="headingSpan">(6 items)</span></h2>
+            <div class="product">
+            
+                <button class="pre-btn"><img src="images/icon-forward.png" alt=""></button>
+                <button class="nxt-btn"><img src="images/icon-forward.png" alt=""></button>
+            
+                <div class="product-container">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img class="product-thumb"
+                                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6291/6291885_sd.jpg;maxHeight=272;maxWidth=400"
+                                alt="">
+                        </div>
+                        <div class="product-info">
+                            <a href="#">Cuisinart - Extra-Large Rotisserie Fryer - Silver</a>
+                            <p class="price">$299.99</p>
+                            <!-- <p class="actual-price">$320</p> -->
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img class="product-thumb"
+                                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6416/6416387ld.jpg;maxHeight=272;maxWidth=400"
+                                alt="">
+                        </div>
+                        <div class="product-info">
+                            <a href="#">Cuisinart - 1.1L Analog Compact Deep Fryer - Black Stainless</a>
+                            <p class="price">$49</p>
+                            <!-- <p class="actual-price">$320</p> -->
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img class="product-thumb"
+                                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6480/6480907_sd.jpg;maxHeight=272;maxWidth=400"
+                                alt="">
+                        </div>
+                        <div class="product-info">
+                            <a href="#">Elite Gourmet - 1.5Qt. Deep Fryer - Stainless Steel</a>
+                            <p class="price">$32</p>
+                            <p class="actual-price">$39.99</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img class="product-thumb"
+                                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6430/6430164_rd.jpg;maxHeight=272;maxWidth=400"
+                                alt="">
+                        </div>
+                        <div class="product-info">
+                            <a href="#">Sony - PULSE 3D Wireless Headset for PS5, PS4, and PC - White</a>
+                            <p class="price">$99.99</p>
+                            <!-- <p class="actual-price">$320</p> -->
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img class="product-thumb"
+                                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6517/6517331_sd.jpg;maxHeight=272;maxWidth=400"
+                                alt="">
+                        </div>
+                        <div class="product-info">
+                            <a href="#">PDP - Airlite PS5 Wireless Headset - White - Frost White</a>
+                            <p class="price">$84</p>
+                            <!-- <p class="actual-price">$320</p> -->
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img class="product-thumb"
+                                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6515/6515569_sd.jpg;maxHeight=272;maxWidth=400"
+                                alt="">
+                        </div>
+                        <div class="product-info">
+                            <a href="#">Astro Gaming - A30 Wireless Dolby Atmos Gaming Headset for PS5,</a>
+                            <p class="price"></p>
+                            <!-- <p class="actual-price">$320</p> -->
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img class="product-thumb"
+                                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464584_sd.jpg;maxHeight=240;maxWidth=240"
+                                alt="">
+                        </div>
+                        <div class="product-info">
+                            <a href="#">Samsung - Galaxy Tab A7 Lite 8.7" 32GB with Wi-Fi - Dark Gray</a>
+                            <p class="price">$109.99</p>
+                            <p class="actual-price">$160</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img class="product-thumb"
+                                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464584_sd.jpg;maxHeight=240;maxWidth=240"
+                                alt="">
+                        </div>
+                        <div class="product-info">
+                            <a href="#">Samsung - Galaxy Tab A7 Lite 8.7" 32GB with Wi-Fi - Dark Gray</a>
+                            <p class="price">$109.99</p>
+                            <p class="actual-price">$160</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img class="product-thumb"
+                                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6471/6471386_rd.jpg;maxHeight=272;maxWidth=400"
+                                alt="">
+                        </div>
+                        <div class="product-info">
+                            <a href="#">Ninja - Foodi 10-in-1 Smart XL Air Fry Oven - Stainless Silver</a>
+                            <p class="price">279.99</p>
+                            <p class="actual-price">$349</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- samsung products -->
+            <div id="samsungProducts">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-78869-iac-samsung-110722-7b5b1624-07e2-48f9-9c48-c33d1633508e.jpg"
+                    alt="">
+      <div id="samsungLeft">
+        <h2>Samsung Galaxy Connected Experience.</h2>
+        <p class="headingSpan">Life opens up with Galaxy.</p>
+        <a href="#">Shop more Samsung products</a>
         </div>
-    </div>
+        
+        <!-- product slider -->
+        <div class="product" id="samsungRight">
+            <button class="pre-btn"><img src="images/icon-forward.png" alt=""></button>
+            <button class="nxt-btn"><img src="images/icon-forward.png" alt=""></button>
+        
+            <div class="product-container">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img class="product-thumb"
+                            src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6462/6462988_sd.jpg;maxHeight=272;maxWidth=400"
+                            alt="">
+                    </div>
+                    <div class="product-info">
+                        <a href="#">Chefman TurboFry 9 Qt. Digital Touch Dual Basket Air Fryer - Matte Black</a>
+                        <p class="price">$99.99</p>
+                        <!-- <p class="actual-price">$320</p> -->
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img class="product-thumb"
+                            src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6269/6269234_sd.jpg;maxHeight=272;maxWidth=400"
+                            alt="">
+                    </div>
+                    <div class="product-info">
+                        <a href="#">Ninja Air Fryer - Black/Gray</a>
+                        <p class="price">$89.99</p>
+                        <!-- <p class="actual-price">$320</p> -->
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img class="product-thumb"
+                            src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6514/6514052_sd.jpg;maxHeight=272;maxWidth=400"
+                            alt="">
+                    </div>
+                    <div class="product-info">
+                        <a href="#">Samsung - 75" Class TU690T Series LED 4K UHD Smart Tizen TV</a>
+                        <p class="price">$579.99</p>
+                        <p class="actual-price">$600</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img class="product-thumb"
+                            src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6357/6357664_sd.jpg;maxHeight=272;maxWidth=400"
+                            alt="">
+                    </div>
+                    <div class="product-info">
+                        <a href="#">Ninja - Foodi 8-in-1 Digital Air Fry Oven, Toaster, Flip-Away</a>
+                        <p class="price">$177</p>
+                        <p class="actual-price">$230</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img class="product-thumb"
+                            src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6471/6471386_rd.jpg;maxHeight=272;maxWidth=400"
+                            alt="">
+                    </div>
+                    <div class="product-info">
+                        <a href="#">Ninja - Foodi 10-in-1 Smart XL Air Fry Oven - Stainless Silver</a>
+                        <p class="price">279.99</p>
+                        <p class="actual-price">$349</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img class="product-thumb"
+                            src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6507/6507317_sd.jpg;maxHeight=272;maxWidth=400"
+                            alt="">
+                    </div>
+                    <div class="product-info">
+                        <a href="#">Bella Pro Series - 4.2-qt. Digital Air Fryer - Stainless Steel Finish</a>
+                        <p class="price">$39.99</p>
+                        <!-- <p class="actual-price">$320</p> -->
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img class="product-thumb"
+                            src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464584_sd.jpg;maxHeight=240;maxWidth=240"
+                            alt="">
+                    </div>
+                    <div class="product-info">
+                        <a href="#">Samsung - Galaxy Tab A7 Lite 8.7" 32GB with Wi-Fi - Dark Gray</a>
+                        <p class="price">$109.99</p>
+                        <p class="actual-price">$160</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img class="product-thumb"
+                            src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510882_sd.jpg;maxHeight=240;maxWidth=240"
+                            alt="">
+                    </div>
+                    <div class="product-info">
+                        <a href="#">Samsung - Galaxy Watch5 Aluminum Smartwatch 44mm</a>
+                        <p class="price">$279</p>
+                        <!-- <p class="actual-price">$320</p> -->
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img class="product-thumb"
+                            src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6430/6430164_rd.jpg;maxHeight=272;maxWidth=400"
+                            alt="">
+                    </div>
+                    <div class="product-info">
+                        <a href="#">Sony - PULSE 3D Wireless Headset for PS5, PS4, and PC - White</a>
+                        <p class="price">$99.99</p>
+                        <!-- <p class="actual-price">$320</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
 </body>
  
 </html>
-
+<script src="scripts/slider.js"></script>
