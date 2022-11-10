@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #featured{
+            height: 400px;
+        }
+        #featuredchild{
+            margin-top: 10px;
+            height: 100%;
+            /* border: 1px solid red; */
+        }
+        #featuredchild{
+            margin-top: 10px;
+            /* border: 1px solid blue; */
+            border-top: 1px solid grey;
+            height: 90%;
+            display: flex;
+            justify-content: space-between;
+        }
+        #featuredchild>div{
+            width: 33%;
+            height: 90%;
+            margin-top: 20px;
+            /* border: 1px solid violet; */
+        }
+        .ofo{
+            border-left: 1px solid grey;
+        }
+        #featuredchild>div>img{
+            width: 90%;
+            height: 70%;
+            margin-left: 5%;
+            margin-bottom: 25px;
+        }
+        #featuredchild>div>div>a{
+            text-decoration: none;
+            color: #0457c8;
+            font-size: 20px;
+            font-weight: 600;
+            font-family: 'Roboto', sans-serif;
+            /* margin-left: 10px; */
+        }
+        #featuredchild>div>div>a:hover{
+            text-decoration: underline;
+            color: #001e73;
+        }
+        #featuredchild>div>div>p{
+            color: #a4a4a7;
+            font-size: 12px;
+            line-height: 1.3;
+            font-family: 'Roboto', sans-serif;
+            /* margin-left: 10px; */
+        }
+        #featuredchild>div>div{
+            margin-left: 5%;
+        }
+        #giftShop{
+            display: flex;
+            justify-content: space-around;
+            /* border: 1px solid red; */
+            height: 95px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            font-family: 'Roboto', sans-serif;
+        }
+        #giftShop>div {
+            width: 48%;
+            background-color: #f0f2f4;
+            border: 1px solid #d3d8df;
+            display: flex;
+        }
+        #giftShop>div>div>img{
+            width: 80px;
+            height: 80px;
+        }
+        #giftShop>div>div{
+            line-height: 4px;
+            margin-top: 7px;
+            margin-left: 7px;
+        }
+        #giftShop>div>div>h2{
+            font-size: 19px;
+        }
+        #giftShop>div>div>p{
+            font-size: 15px;
+        }
+        #giftShop>div>div>a{
+            font-size: 15px;
+            text-decoration: none;
+            color: #0457c8;
+        }
+        #giftShop>div>div>a:hover{
+            text-decoration: underline;
+            color: #001e73;
+        }
+        #gift{
+            padding-left: 20%;
+        }
+        #shop{
+            padding-left: 15%;
+        }
+        #delivery{
+            display: flex;
+            justify-content: space-between;
+        }
+        #delivery>div{
+            display: flex;
+            font-family: 'Roboto', sans-serif;
+        }
+        #delivery>div>div>img{
+            height: 80px;
+            width: 80px;
+        }
+        #delivery>div>div>a{
+            margin-top: 20px;
+            color: #55555a;
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: 400;
+        }
+        #delivery>div>div>p{
+            font-size: 15px;
+            color: #1d252c;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div id="home3rdSection">
+        <h2>Deals inspired by your shopping </h2>
+        <div></div>
+    </div>
+ 
+    <!-- our featured offers -->
+    <div id="featured">
+        <h2>Our featured offers</h2>
+        <div id="featuredchild">
+            <div>
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_6509653-macbook-pro-MMT-574306-0815-2c6fefe1-d0ed-4399-8b8a-43734c8ab582.jpg;maxHeight=504;maxWidth=740" alt="">
+               <div>
+                <a href="#">MacBook <br> Save up to $200 on select models.</a>
+                <p>Minimum savings is $50.</p>
+               </div>
+            </div>
+            <div class="ofo">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-MMT-604902_DER-6b7bc51f-5cd8-417b-b319-57896173d95e.jpg;maxHeight=504;maxWidth=740" alt="">
+                <div>
+                    <a href="#">Save up to $400 on select floor care <br> for your home.</a>
+                <p>Minimum savings is $100.</p>
+                </div>
+            </div>
+            <div class="ofo">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-601681_pol_COPE_DER2-0adf8431-8541-45c8-836a-f3b759e050de.jpg;maxHeight=504;maxWidth=740" alt="">
+                <div>
+                    <a href="#">Save up to $700 on select exercise <br> equipment.</a>
+                <p>Minimum savings is $30.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- gift ideas and Shop with an expert, -->
+    <div id="giftShop">
+        <div>
+            <div id="gift">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/gl-77114-giftideas-ep-ghp-half_der-4ed4c996-c753-4780-8867-ab5a6a3ba4a1.png" alt="">
+            </div>
+            <div>
+                <h2>Gift Ideas.</h2>
+                <p>Cover your entire list in one stop.</p>
+                <a href="#">Shop Now</a>
+            </div>
+        </div>
+        <div>
+            <div id="shop">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-65963-expert-210831-70c599ed-fc34-47d8-9b93-85f899d93c8f.png" alt="">
+            </div>
+            <div>
+                <h2>Shop with an expert, right from home.</h2>
+                <p>Call, chat, video chat or in-home consultation.</p>
+                <a href="#">Shop with an Expert</a>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- delivery div -->
+    <div id="delivery">
+        <div>
+            <div>
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-app-vpe-freeshippin_der1-206852.png;maxHeight=160;maxWidth=160" alt="">
+            </div>
+            <div>
+                <a href="#">Free next-day delivery</a>
+                <p>on thousands of items.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-34525-app-vpe-storepickup1-206866.png;maxHeight=160;maxWidth=160" alt="">
+            </div>
+            <div>
+                <a href="#">Ready in one hour</a>
+                <p>with Store or Curbside Pickup.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-app-vpe-freeshippin_der1-206852.png;maxHeight=160;maxWidth=160" alt="">
+            </div>
+            <div>
+                <a href="#">Same-day delivery.</a>
+            </div>
+        </div>
+    </div>
+</body>
+ 
+</html>
+
