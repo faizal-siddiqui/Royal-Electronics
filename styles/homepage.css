@@ -1,0 +1,347 @@
+
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+    #category{
+        width: 100%;
+        height: auto;
+        background-image: linear-gradient(to right, #10296f ,#0340af,#0340af, #10296f);
+    }
+    #first{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        
+    }
+    #firstLeft{
+        width: 60%;
+        height: auto;
+        color: white;
+        padding-left: 80px;
+    }
+    #firstLeft>h1{
+        font-size: 70px;
+    }
+    #firstLeft>h2{
+        font-size: 50px;
+        color: yellow;
+        margin-bottom: 20px;
+        
+    }
+   #firstRight{
+        width: 20%;
+        /* border: 1px solid red; */
+        margin-top: 50px;
+        /* padding-left: -30px; */
+    }
+    #firstRight>h5{
+        color: white;
+    }
+    #firstRight>h5>span{
+        color: yellow;
+    }
+    #firstRight>button{
+        background-color: yellow;
+        padding: 7px;
+        border-radius: 5px;
+        border: none;
+        margin-top: 20px;
+    }
+    #second{
+        width: 70%;
+        margin: auto;
+        /* border: 1px solid red; */
+    }
+    #second>h3{
+        color: white;
+        padding-top: 20px;
+    }
+    #secondOne{
+        display: flex;
+
+    }
+    #secondOne>div{
+        display: flex;
+        width: 100%;
+        /* border: 1px solid yellow; */
+        margin: 10px;
+        padding: 5px;
+    }
+    .image{
+        width:100% ;
+        border-radius: 50%;
+        border: 1px solid rgb(57, 111, 246);
+    }
+    .linkColor{
+        color: yellow;
+        text-align: center;
+        text-decoration: none;
+    }
+    .linkColor:hover{
+        text-decoration: underline;
+    }
+    #second>h3{
+        margin-top: 30px;
+    }
+    #secondTwo{
+        display: flex;
+        margin-top: -30px;
+    }
+    #secondTwo>div{
+        display: flex;
+        width: 100%;
+        /* border: 1px solid yellow; */
+       margin: 10px;
+       padding: 5px;
+    }
+    #secondThree{
+        display: flex;
+        margin-top: -30px;
+    }
+    #secondThree>div{
+        display: flex;
+        width: 50%;
+        /* border: 1px solid yellow; */
+       margin: 10px;
+       padding: 5px;
+    }
+
+    /* New arrivals */
+    #arrivals>h2{
+        margin-top: 20px;
+        padding: 5px;
+    }
+    #arrivalsContainer{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #arrivalsContainer>div{
+        border: 1px solid grey;
+        width: 18%;
+        padding: 10px;
+        border-radius: 10px;
+
+    }
+    #arrivalsContainer>div>div{
+        /* border: 1px solid red; */
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .arrivalImage{
+        width: 50%;
+    }
+   
+    #arrivalsContainer>div>div>a{
+        text-align: center;
+    }
+   .arrival2nd5nd{
+     width: 80%;
+   }
+   .arrivalLink{
+    margin-bottom: ;
+    color: blue;
+    text-decoration: none;
+   }
+   .arrivalLink:hover{
+    text-decoration: underline;
+    color: #063a9f;
+   }
+    
+
+    /* you viewed */
+    #viewContainer>h3{
+        margin-top: 20px;
+        padding: 5px;
+    }
+    #view{
+        border: 1px solid grey;
+        width: 18%;
+        height: 200px;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 10px;
+    }
+    #view>div>img{
+       width: 70%; 
+       padding: 40px;
+       padding-top: 20%;
+       padding-bottom: 20px;
+    }
+    #viewLink{
+        color: blue;
+        text-decoration: none;
+    }
+    #viewHeading{
+        padding: 10px;
+        color: blue;
+        text-decoration: none;
+       
+    }
+    #viewLink:hover{
+        color: #063a9f;
+        text-decoration: underline;
+    }
+    #viewHeading:hover{
+        color: #063a9f;
+        text-decoration: underline;
+    }
+
+    /*Deals */
+     #deals{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #deals>div{
+        border: 1px solid grey;
+        width: 47%;
+        height: auto;
+        border-radius: 10px;
+    }
+    #OutletDeal>div{
+       padding: 10px;
+    }
+    #OutletDeal>div>h3{
+        border: 1px solid rgb(0, 128, 255);
+        width: 18%;
+        height: 30px;
+        text-align: center;
+        padding-top: 5px;
+        background-color: blue;
+        color:yellow ;
+    }
+    #OutletDeal>div>h3>span{
+        color: white;
+    }
+
+     #OutletDealDetails{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #OutletDealDetails>div>h1{
+        padding: 10px;
+    }
+    #OutletDealDetails>div>h1>span{
+        color: rgb(168, 7, 7);
+    }
+    #OutletDealDetails>div>p{
+        padding: 30px;
+    }
+    #OutletDealDetails>div>button{
+        color: blue;
+        border: 1px solid blue;
+        padding: 12px;
+        border-radius: 5px;
+        background-color: FFFFFF;
+    }
+    #OutletDealDetails>div>button:hover{
+        color: white;
+        background-color: blue;
+    }
+    #continueShoppingDetails{
+        display: flex;
+    }
+    #continueShopping>div>p{
+        margin: 10px;
+    }
+    #continueShoppingDetails>div>img{
+        width: 90%;
+        padding: 30px;
+    }
+    #continueShoppingDetails>div>div{
+        padding: 50px;
+    }
+    #continueShoppingDetails>div>div>p{
+        padding: 10px;
+    }
+    #continueShoppingDetails>div>div>button{
+        color: blue;
+        border: 1px solid blue;
+        padding: 12px;
+        border-radius: 5px;
+        background-color: FFFFFF;
+    }
+    #continueShoppingDetails>div>div>button:hover{
+        color: white;
+        background-color: blue;
+    }
+    
+    /* Offer page */
+    #deal{
+        display: flex;
+        border: 0px solid red;
+        width: 96%;
+        margin: auto;
+        height: 180px;
+        line-height: 4px;
+        padding-left: 13%;
+        background-color: #0046BE;;
+        color: white;
+    }
+    #deal img{
+        height: 100px;
+        margin-top: 15px;
+        margin-right: 10px
+    }
+    #deal p{
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 30px;
+    }#deal h5{
+        margin-top: 20px;
+    }
+    #deal1{
+        border: 0px solid black;
+        width: 180px;
+    }#deal2{
+        margin-left: 0px;
+        border: 0px solid teal;
+        width:180px;
+        padding-left:20px;
+        border-left: 2px solid white;
+    }#deal button{
+        height: 20px;
+        margin-left: 70px;
+        margin-top: 55px;
+        color: #0046BE;
+        width: 70px;
+        font-size: 9px;
+        font-weight: 30px;
+    }#deal2 p{
+        line-height: 0px;
+    }#maindeal{
+        margin-top: 20px;
+    }#deal h1{
+        color: yellow;
+        margin-top: 20px;
+    }
+
+
+
+
+
+    .bgImage>img{
+        width: 28%;
+        margin: 30px;
+    }
+    .bgImage{
+        position: relative;
+    }
+    .imageHead{
+        position: absolute;
+        top: 20%;
+        left: 9%;
+    }
+    .imagePara{
+        position: absolute;
+        top: 30%;
+         left: 6%; 
+    }
