@@ -8,6 +8,7 @@
     position: relative;
     justify-content: space-between;
     z-index: 10;
+    /* margin-top: 70px; */
 }
 
 #topbar a:hover{
@@ -141,7 +142,7 @@
     position: absolute;
     top: 100%;
     left: 56.3%;
-    background-color: rgba(128, 128, 128, 0.091);
+    background-color: #fff;
     /* border: 2px solid red; */
     /* padding: 10px; */
     width: 30%;
@@ -301,13 +302,13 @@
 }
 
 .recently_viewed_bottom img{
-    width: 70%;
+    width: 50%;
     margin-top: 10px;
 }
 
 .recently_viewed_bottom > div > div:nth-child(1){
     /* border: 2px solid red; */
-    width: 30%;
+    width: 50%;
     padding: 10px 0px 0px 10px;
 }
 

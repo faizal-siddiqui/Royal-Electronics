@@ -24,7 +24,7 @@ function hamburgerdisplay() {
   };
 }
 
-hamburgerdisplay();
+// hamburgerdisplay();
 
 function aieadisplay() {
   let count = 2;
@@ -35,11 +35,11 @@ function aieadisplay() {
     if (count % 2 == 0) {
       count++;
       aiea_dropdown.style.display = "none";
-      console.log(count);
+      // console.log(count);
     } else {
       count++;
       aiea_dropdown.style.display = "block";
-      console.log(count);
+      // console.log(count);
     }
   };
   let close_aiea_dropdown = document.getElementById("close_aiea_dropdown");
@@ -51,7 +51,7 @@ function aieadisplay() {
   };
 }
 
-aieadisplay();
+// aieadisplay();
 
 
 
@@ -77,7 +77,7 @@ function holidayDropdown() {
   };
 }
 
-holidayDropdown();
+// holidayDropdown();
 
 // MORE DROPDOWN
 
@@ -97,7 +97,7 @@ function moreDropdown() {
   };
 }
 
-moreDropdown();
+// moreDropdown();
 
 // ACCOUNTS DROPDOWN
 
@@ -117,7 +117,7 @@ function accountsDropdown() {
   };
 }
 
-accountsDropdown();
+// accountsDropdown();
 
 // RECENTLY VIEWED DROPDOWN
 
@@ -144,7 +144,7 @@ function recentlyViewedDropdown() {
   };
 }
 
-recentlyViewedDropdown();
+// recentlyViewedDropdown();
 
 // ORDER STATUS
 
@@ -169,7 +169,7 @@ function orderStatusDropdown() {
   };
 }
 
-orderStatusDropdown();
+// orderStatusDropdown();
 
 // SAVED ITEMS
 
@@ -194,7 +194,7 @@ function savedItemsDropdown() {
   };
 }
 
-savedItemsDropdown();
+// savedItemsDropdown();
 
 function alldropdownClose() {
   let ham_three_lines = document.getElementById("ham_three_lines");
@@ -229,3 +229,4 @@ function alldropdownClose() {
 }
 
 
+export {hamburgerdisplay, aieadisplay, holidayDropdown, moreDropdown, accountsDropdown, recentlyViewedDropdown, orderStatusDropdown, savedItemsDropdown}
