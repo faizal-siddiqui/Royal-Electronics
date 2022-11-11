@@ -15,7 +15,8 @@ body {
     width: 100%;
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    justify-content: center;
     align-content: center;
     margin-bottom: 20px;
     color: #003888;
@@ -23,7 +24,8 @@ body {
 #gifting>div{
     height: 80%;
     width: 250px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    margin-top: 25px;
 }
 
 .continue_btn{
@@ -37,12 +39,39 @@ body {
     margin-bottom: 17px;
 }
 
+.continue_btn:hover{
+    background-color: #003888;
+}
+
 #priceDiv{
     display: flex;
     justify-content: space-between;
     margin: 10px 0;
     font-size: 17px;
     font-weight: bolder;
+}
+#priceSelect{
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #0046be;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.addtoCartG{
+    background-color: white;
+    color: #0046be;
+    border: 1px solid #0046be;
+    border-radius: 5px;
+    padding: 8px 35px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.addtoCartG:hover{
+    color: white;
+    background-color: #0046be;
+    border: none;
 }
 
 hr{

@@ -20,8 +20,13 @@
             <p>Give a Best Buy Gift Card</p>
         </div>
         <div>
-            <select name="" id=""></select>
-            <button>Add to cart</button>
+            <select name="priceSelect" id="priceSelect">
+                <option value="p50">$50</option>
+                <option value="p25">$25</option>
+                <option value="p100">$100</option>
+                <option value="p200">$200</option>
+            </select>
+            <button class="addtoCartG">Add to cart</button>
         </div>
 
     </div>
@@ -35,7 +40,8 @@
         <div>
             <h2 class="orderHeading" >Saved Items</h2>
             <hr>
-            <div class="aligncenter">
+            <div id="cart_data"></div>
+            <div class="aligncenter" id="emptyToappendcartItem">
                 <h2 class="orderHeading" >Your list is currently empty</h2>
                 <p class="pvlack mrgLeft3">Need inspiration? Check out <span><a href="#" class="asize">recommended items</a></span>, or search for items to save.</p>
             </div>
@@ -47,7 +53,7 @@
              <h2 class="headingMargin">You recently viewed  <span class="headingSpan">(3 items)</span></h2>
              <div class="product">
             
-                 <div class="product-container">
+                 <div class="product-container2">
                      <div class="product-card">
                          <div class="product-image">
                              <img class="product-thumb"
@@ -222,7 +228,7 @@
             <hr>
             <div id="priceDiv">
                 <div class="totalHeading">Total</div>
-                <div class="totalHeading">$0.00</div>
+                <div class="totalHeading">$<span id="cart_total">0.00</span></div>
             </div>
             <button class="continue_btn" >Continue shopping</button>
             <hr>
@@ -233,3 +239,5 @@
 </body>
 
 </html>
+<script src="scripts/cart.js"></script>
+<script src="homeslider.js"></script>
