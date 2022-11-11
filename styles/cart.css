@@ -18,6 +18,7 @@ body {
     justify-content: space-around;
     align-content: center;
     margin-bottom: 20px;
+    color: #003888;
 }
 #gifting>div{
     height: 80%;
@@ -86,7 +87,7 @@ hr{
         /* height: auto; */
         width: 95%;
         padding-top: 30px;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         margin: auto;
         margin-bottom: 30px;
         grid-template-areas: 
