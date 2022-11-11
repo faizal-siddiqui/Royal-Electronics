@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      }
+    body{
+    font-family: sans-serif;
+    }
+        #featured{
+            height: 400px;
+        }
+        #featuredchild{
+            margin-top: 10px;
+            height: 100%;
+            /* border: 1px solid red; */
+        }
+        #featuredchild{
+            margin-top: 10px;
+            /* border: 1px solid blue; */
+            border-top: 1px solid grey;
+            height: 90%;
+            width: 97%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        #featuredchild>div{
+            width: 33%;
+            height: 90%;
+            margin-top: 20px;
+            /* border: 1px solid violet; */
+        }
+        .ofo{
+            border-left: 1px solid grey;
+        }
+        #featuredchild>div>img{
+            width: 90%;
+            height: 70%;
+            margin-left: 5%;
+            margin-bottom: 25px;
+        }
+        #featuredchild>div>div>a{
+            text-decoration: none;
+            color: #0457c8;
+            font-size: 20px;
+            font-weight: 600;
+            font-family: 'Roboto', sans-serif;
+            /* margin-left: 10px; */
+        }
+        #featuredchild>div>div>a:hover{
+            text-decoration: underline;
+            color: #001e73;
+        }
+        #featuredchild>div>div>p{
+            color: #a4a4a7;
+            font-size: 12px;
+            line-height: 1.3;
+            font-family: 'Roboto', sans-serif;
+            /* margin-left: 10px; */
+        }
+        #featuredchild>div>div{
+            margin-left: 5%;
+        }
+        #giftShop{
+            display: flex;
+            justify-content: space-around;
+            /* border: 1px solid red; */
+            height: 95px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            font-family: 'Roboto', sans-serif;
+        }
+        #giftShop>div {
+            width: 48%;
+            background-color: #f0f2f4;
+            border: 1px solid #d3d8df;
+            display: flex;
+            line-height: 1.3;
+        }
+        #giftShop>div>div>img{
+            width: 80px;
+            height: 80px;
+        }
+        #giftShop>div>div{
+            /* line-height: 4px; */
+            margin-top: 9px;
+            margin-left: 7px;
+        }
+        #giftShop>div>div>h2{
+            font-size: 19px;
+        }
+        #giftShop>div>div>p{
+            font-size: 15px;
+        }
+        #giftShop>div>div>a{
+            font-size: 15px;
+            text-decoration: none;
+            color: #0457c8;
+        }
+        #giftShop>div>div>a:hover{
+            text-decoration: underline;
+            color: #001e73;
+        }
+        a{
+            font-size: 15px;
+            text-decoration: none;
+            color: #0457c8;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: #001e73;
+        }
+        #gift{
+            padding-left: 20%;
+        }
+        #shop{
+            padding-left: 15%;
+        }
+        #delivery{
+            display: flex;
+            justify-content: space-between;
+            width: 92%;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        #delivery>div{
+            display: flex;
+            font-family: 'Roboto', sans-serif;
+        }
+        #delivery>div>div>img{
+            height: 80px;
+            width: 80px;
+        }
+        #delivery>div>div>a{
+            margin-top: 20px;
+            color: #55555a;
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: 400;
+        }
+        #delivery>div>div>p{
+            font-size: 15px;
+            color: #1d252c;
+        }
+        .paraPadding{
+            padding-top: 15px;
+            padding-left: 20px;
+            line-height: 1.3;
+        }
+        .hrleft{
+            border-left: 1px solid #a4a4a7;
+            padding-left: 50px;
+        }
+ 
+        /*product  slider  */
+        .product {
+            position: relative;
+            /* overflow: hidden; */
+            padding: 20px;
+            padding-top: 35px;
+            /* border: 1px solid red; */
+            width: 97%;
+            margin: auto;
+            border-top: 1px solid #a4a4a7;
+        }
+ 
+        .product-category {
+            padding: 0 10px;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 40px;
+            /* text-transform: capitalize; */
+        }
+ 
+        .product-container{
+            padding: 0 10vw;
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
+ 
+        .product-container::-webkit-scrollbar{
+            display: none;
+        }
+ 
+        .product-card{
+            flex: 0 0 auto;
+            width: 220px;
+            height: 250px;
+            margin-right: 20px;
+        }
+ 
+        .product-image{
+            position: relative;
+            width: 100%;
+            height: 150px;
+        }
+ 
+        .product-thumb{
+            width: 70%;
+            height: 100px;
+            margin: auto;
+        }
+ 
+        .product-short-description {
+            width: 100%;
+            height: 20px;
+            line-height: 20px;
+            overflow-wrap: break-word;
+            opacity: 0.5;
+            margin: 5px 0;
+        }
+ 
+        .price{
+            font-weight: 900;
+            font-size: 20px;
+        }
+ 
+        .actual-price {
+            /* opacity: 0.5; */
+            color: #434a50;
+            text-decoration: line-through;
+        }
+ 
+        .pre-btn,
+        .nxt-btn{
+            border: none;
+            width: 20px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+            cursor: pointer;
+            z-index: 9;
+        }
+ 
+        .pre-btn{
+            left: 0;
+            transform: rotate(180deg);
+            margin-left: 0px;
+        }
+        .nxt-btn {
+            right: 0;
+        }
+ 
+        .headingSpan{
+            font-size: 15px;
+            color: #1d252c;
+            font-weight: lighter;
+        }
+ 
+        .headingMargin{
+            font-size: 20px;
+            margin: 20px 0px 10px 10px;
+        }
+ 
+        #samsungProducts{
+            width: 97%;
+            margin: auto;
+            margin-bottom: 30px;
+            height: 350px;
+            display: flex;
+            background-image: url("https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-78869-iac-samsung-110722-7b5b1624-07e2-48f9-9c48-c33d1633508e.jpg");
+        }
+        #samsungProducts>img{
+            width: 100%;
+            height: 100%;
+        }
+        #samsungLeft{
+            width: 35%;
+            font-weight: 600;
+            line-height: 1.5;
+            margin-top: 17px;
+            padding-left: 20px;
+        }
+        #samsungRight{
+            width: 60%;
+            border: none;
+            margin-top: 0;
+        }
+        #samsungRight>div>div{
+            background-color: white;
+            width: 180px;
+            padding:20px;
+            border-radius: 5px;
+            height: 300px;
+        }
