@@ -155,7 +155,7 @@
         /*product  slider  */
         .product {
             position: relative;
-            /* overflow: hidden; */
+            overflow: hidden;
             padding: 20px;
             padding-top: 35px;
             /* border: 1px solid red; */

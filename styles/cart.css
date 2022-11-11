@@ -17,11 +17,64 @@ body {
     display: flex;
     justify-content: space-around;
     align-content: center;
+    margin-bottom: 20px;
 }
 #gifting>div{
     height: 80%;
     width: 250px;
     border: 1px solid red;
+}
+
+.continue_btn{
+    color: white;
+    background-color: #0046be;
+    padding: 12px 60px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    width: 100%;
+    margin-bottom: 17px;
+}
+
+#priceDiv{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+hr{
+    background-color: #d3d8df;
+    border: 0.2px solid #d3d8df;
+    height: 0px;
+    margin: 10px 0;
+}
+
+.totalHeading{
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.pvlack{
+    font-size: 13px;
+    line-height: 1.2;
+}
+.asize{
+    font-size: 13px;
+}
+
+.orderHeading{
+    font-size: 20px;
+    margin-left: 3%;
+}
+
+.mrgLeft3{
+    margin-left: 3%;
+    margin-top: 10px;
+}
+.aligncenter{
+    text-align: center;
 }
 
 /* grid */
@@ -35,6 +88,7 @@ body {
         padding-top: 30px;
         border: 1px solid red;
         margin: auto;
+        margin-bottom: 30px;
         grid-template-areas: 
         "a a d"
         "b b d"
