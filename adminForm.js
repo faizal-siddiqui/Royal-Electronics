@@ -10,6 +10,7 @@ let form = document.getElementById('adminForm');
 form.onsubmit = (event) => {
     event.preventDefault();
     proSubmit();
+    // diplayTable(savedProducts);
 }
 
     let proArr = JSON.parse(localStorage.getItem("productList")) || [];
@@ -32,13 +33,12 @@ form.onsubmit = (event) => {
 
     // append data in table
     let savedProducts = JSON.parse(localStorage.getItem("productList")) || [];
+    let container = document.querySelector("tbody");
 
-    diplayTable(savedProducts);
-
-    function diplayTable(res) {
-        // document.querySelector("tbody").innerHTML = ""; 
-        let container = document.querySelector("tbody");
-        res.forEach(function (el) {
+    function diplayTable(data) {
+        container.innerHTML = null;
+        
+        data.forEach(function (el, index) {
         let tr = document.createElement("tr");
   
         let td1 = document.createElement("td");
@@ -57,21 +57,31 @@ form.onsubmit = (event) => {
         let td5 = document.createElement("td");
         td5.innerText=el.product_count;
   
-        let td6 = document.createElement("td");
-        td6.innerText= "Remove";
-        td6.addEventListener("click", function () {
-          removeData(el);
+        let reject = document.createElement("td");
+        reject.innerText= "Remove";
+        reject.addEventListener("click", function () {
+          removeData(savedProducts,index);
         });
   
-        tr.append(td1, td2, td3, td4, td5, td6);
+        tr.append(td1, td2, td3, td4, td5, reject);
         container.append(tr);
       });
+
       }
 
-      function removeData(i) {
-         savedProducts.splice(i,1);
-        console.log(savedProducts);
+      diplayTable(savedProducts);
 
-         localStorage.setItem("productList", JSON.stringify(savedProducts));
-         displayData(savedProducts);
-      }
+      function removeData(data,index){
+        savedProducts = data.filter(function(el,i){
+            return i != index;
+        })
+        diplayTable(savedProducts);
+    }
+
+      // function removeData(i) {
+      //    savedProducts.splice(i,1);
+      //   console.log(savedProducts);
+
+      //    localStorage.setItem("productList", JSON.stringify(savedProducts));
+      //    displayData(savedProducts);
+      // }
