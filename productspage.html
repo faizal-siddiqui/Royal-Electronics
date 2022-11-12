@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- // important links -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/productspage.css" />
+    <link rel="stylesheet" href="./styles/live_message.css">
+    <title>Document</title>
+  </head>
+  <body>
+
+    <!-- NAVBAR APPEND -->
+    <div id="navbar"></div>
+
+
+    <div id="main_div">
+      <div id="top_head">
+        <p>
+          <a href="">Royal Electronics</a> <i class="material-icons">arrow_right</i> All
+          categories
+        </p>
+        <h4>Laptop & Computer Deals</h4>
+      </div>
+
+      <div id="products_div">
+        <!-- Filter Div -->
+
+        <div id="filter_div">
+          <div class="filter_top">
+            <h4>Get it fast</h4>
+            <p>Store Pickup at <a href="">Aiea and nearby stores</a></p>
+            <div>
+              <input type="checkbox" />
+              <p>Ready tomorrow</p>
+            </div>
+          </div>
+          <ul class="filter_category">
+            <h4>Category</h4>
+            <li><a href="#">All Laptops</a></li>
+            <li><a href="#">PC Laptops</a></li>
+            <li><a href="#">Chromebooks</a></li>
+            <li><a href="#">MacBooks</a></li>
+            <li><a href="#">PC Gaming</a></li>
+            <li><a href="#">Desktops</a></li>
+          </ul>
+          <div class="filter_price">
+            <h5>Price</h5>
+            <div>
+              <input type="number" placeholder="min"/>
+              <p>to</p>
+              <input type="number" placeholder="max"/>
+              <i class="material-icons">arrow_forward_ios</i>
+            </div>
+            <ul class="filter_price_checkbox">
+              <li>
+                <input class="price_checkbox" type="checkbox" />
+                <p>Less than $25</p>
+              </li>
+              <li>
+                <input class="price_checkbox" type="checkbox" />
+                <p>$25 - $49.99</p>
+              </li>
+              <li>
+                <input class="price_checkbox" type="checkbox" />
+                <p>$50 - $74.99</p>
+              </li>
+              <li>
+                <input class="price_checkbox" type="checkbox" />
+                <p>$75 - $99.99</p>
+              </li>
+              <li>
+                <input class="price_checkbox" type="checkbox" />
+                <p>$100 - $149.99</p>
+              </li>
+              <li>
+                <input class="price_checkbox" type="checkbox" />
+                <p>$150 - $199.99</p>
+              </li>
+              <li>
+                <input class="price_checkbox" type="checkbox" />
+                <p>$200 - $499.99</p>
+              </li>
+              <li>
+                <input class="price_checkbox" type="checkbox" />
+                <p>$500 - $999.99</p>
+              </li>
+              <li>
+                <input class="price_checkbox" type="checkbox" />
+                <p>$1000 - above</p>
+              </li>
+            </ul>
+          </div>
+          <div class="filter_brand">
+            <h5>Brand</h5>
+            <input id="brand_filter" type="text" placeholder="enter brand name"/>
+          </div>
+        </div>
+
+        <!-- Products data -->
+        <div id="products_data">
+          <div class="featured_deals">
+            <div>
+              <h1>Featured deals.</h1>
+              <h3>Including select Black Friday Deals.</h3>
+            </div>
+            <div>
+                <button>Shop All holiday Deals</button>
+            </div>
+          </div>
+
+          <div class="featured_deals_products">
+            <div>
+              <img
+                src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_6501269-MMT-545157-0523-f4752dee-6c11-484d-a6ae-dadbcae80c2d.jpg;maxHeight=302;maxWidth=504"
+                alt=""
+              />
+              <p>Save up to $500 on select Windows laptops.</p>
+              <p>Minimum savings is $30.</p>
+              <button>Shop Now</button>
+            </div>
+            <div>
+              <img
+                src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_6509653-macbook-pro-MMT-574306-0815-2c6fefe1-d0ed-4399-8b8a-43734c8ab582.jpg;maxHeight=302;maxWidth=504"
+                alt=""
+              />
+              <p>MacBook Save up to $200 on select models.</p>
+              <p>Minimum savings is $50.</p>
+              <button>Shop Now</button>
+            </div>
+            <div>
+              <img
+                src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_6458047-chromebook-MMT-564250-0718-5c8d5115-cc13-4dd8-8fc2-52377f1817fd.jpg;maxHeight=302;maxWidth=504"
+                alt=""
+              />
+              <p>Save up to $200 on featured Chromebooks.</p>
+              <p>Minimum savings is $30.</p>
+              <button>Shop Now</button>
+            </div>
+            <div>
+              <img
+                src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_Gaming-Monitors-MMT-600550-1017-f410463a-e470-4fed-b418-6f39025a7f2b.jpg;maxHeight=302;maxWidth=504"
+                alt=""
+              />
+              <p>$249.99 for select 27" Quad HD gaming monitors, after savings.</p>
+              <p>Minimum savings is $40.</p>
+              <button>Shop Now</button>
+            </div>
+          </div>
+          <div class="products_faq">
+            <p>
+              Products offered subject to change. Black Friday Deal applies to
+              new items only. Limited quantities. No rainchecks. See Black
+              Friday FAQs
+            </p>
+          </div>
+          <div class="sort">
+            <h5 id="total_products">0 items</h5>
+            <div>
+              <p>Sort By:</p>
+              <select name="" id="sort_prod">
+                <option value="">Featured</option>
+                <option value="LH">Price Low to High</option>
+                <option value="HL">Price High to Low</option>
+              </select>
+            </div>
+          </div>
+          <div id="append_products"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="live_mess" id="live_message">
+
+
+      <!-- FOOTER APPEND -->
+      <div id="footer"></div>
+      
+    </div>
+  </body>
+</html>
+<script type="module" src="./productspage.js"></script>
