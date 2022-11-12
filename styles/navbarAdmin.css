@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+#navbar2{
+    background-color: #0046be;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#navbar2>div{
+    margin-top: 9px;
+    width: 15%;
+    /* border: 1px solid teal; */
+    height: 68%;
+}
+
+
+#logo>img{
+    height: 100%;
+    width: 90px;
+}
+
+#total{
+    color: white;
+}
+#total>h4{
+    margin-top: 10px;
+}
+
+#signinup>h4{
+    margin-top: 10px;
+}
+#signinup>h4>a{
+    text-decoration: none;
+    color: white;
+}
+
+#signinup>h4>a:hover{
+    text-decoration: underline;
+}
+#sellerD>h3{
+    color: white;
+    margin-top: 22px;
+}
+
+#sellerD>h3>a{
+    color: white;
+    text-decoration: none;
+}
+
+#sellerD>h3>a:hover{
+    text-decoration: underline;
+}
