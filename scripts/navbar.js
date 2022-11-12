@@ -228,5 +228,15 @@ function alldropdownClose() {
   };
 }
 
+// CART REDIRECT (NAVBAR)
 
-export {hamburgerdisplay, aieadisplay, holidayDropdown, moreDropdown, accountsDropdown, recentlyViewedDropdown, orderStatusDropdown, savedItemsDropdown}
+function cart_link(){
+  let cart_redirect = document.getElementById('cart_redirect')
+  cart_redirect.onclick = () => {
+      window.location.href = "cart.html"
+  }
+}
+
+
+
+export {hamburgerdisplay, aieadisplay, holidayDropdown, moreDropdown, accountsDropdown, recentlyViewedDropdown, orderStatusDropdown, savedItemsDropdown, cart_link}

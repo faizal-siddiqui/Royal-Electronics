@@ -9,7 +9,7 @@
     }
    .navbar{ 
     width: 100%;
-    height: 90px;
+    height: 70px;
     background-color: #0046be;
    }
    .navbar{
@@ -20,16 +20,15 @@
     
     
 }
-#logo>img{
-    width: 12%;
-    
-    padding-left: 130px;
+#logo > a>img{
+    width: 9%;
+    padding-left: 70px;
 }
 #returnPage{
     font-weight: bold;
     font-size: 14px;
     color: #ffff;
-    padding-right: 130px
+    padding: 50px
 }
 
    .switch {
@@ -115,14 +114,14 @@
      gap:10px;
    }
    #signIn{
-    width: 30%;
+    width: 40%;
     margin: auto;
     /* border: 1px solid red; */
     background-color: #FFFF;
     
    }
    #container{
-    width: 75%;
+    width: 80%;
     margin: auto;
     padding: 20px;
    }
@@ -206,18 +205,24 @@ a:hover{
 
 
 
+
 .terms{
   display: flex;
   justify-content: flex-start;
-  padding-left: 150px;
+  padding-left: 90px;
+  font-size: 13px;
+}
+
+.terms a{
+  font-size: 12px;
 }
 
 #fs{
   font-size: 13px;
-  padding-left: 150px;
+  padding-left: 90px;
   padding-right: 150px;
   padding-bottom: 20px;
-  font-size: 13px;
+  font-size: 11px;
 }
 hr{
   margin-left: 15px;

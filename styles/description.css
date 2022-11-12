@@ -6,7 +6,7 @@
 body{
     font-family: sans-serif;
 }
-#main{
+#mains{
     width: 95%;
     border: 0px solid red;
     display: flex;

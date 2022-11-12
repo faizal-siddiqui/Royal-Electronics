@@ -11,7 +11,7 @@ topb.innerHTML = topbarFunc()
 
 // scripts
 
-import {hamburgerdisplay, aieadisplay, holidayDropdown, moreDropdown, accountsDropdown, recentlyViewedDropdown, orderStatusDropdown, savedItemsDropdown} from "./scripts/navbar.js"
+import {hamburgerdisplay, aieadisplay, holidayDropdown, moreDropdown, accountsDropdown, recentlyViewedDropdown, orderStatusDropdown, savedItemsDropdown, cart_link} from "./scripts/navbar.js"
 
 hamburgerdisplay()
 aieadisplay()
@@ -21,6 +21,7 @@ accountsDropdown()
 recentlyViewedDropdown()
 orderStatusDropdown()
 savedItemsDropdown()
+cart_link()
 
 // LIVE MESSAGE
 import { live_message } from "./components/live_message.js"
@@ -52,4 +53,6 @@ productContainers.forEach((item, i) => {
     })
 
 })
+
+
 

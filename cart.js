@@ -1,19 +1,35 @@
 
-// import navbar here
+// // import navbar here
 
-// import { navbar } from "./components/navbar.js";
+import { navbar } from "./components/navbar_comp.js";
 
-// let navbar_div = document.getElementById('navbar');
-// navbar_div.innerHTML = navbar();
+let navbar_div = document.getElementById('navbar');
+navbar_div.innerHTML = navbar();
 
-// import footer
+import {topbarFunc} from "./components/topbar.js"
+let topbar_div = document.getElementById('topbar')
+topbar_div.innerHTML = topbarFunc()
 
-// import { footer } from "./components/footer.js";
+import {hamburgerdisplay, aieadisplay, holidayDropdown, moreDropdown, accountsDropdown, recentlyViewedDropdown, orderStatusDropdown, savedItemsDropdown, cart_link} from "./scripts/navbar.js"
 
-// let footer_div = document.getElementById('footer');
-// footer_div.innerHTML = footer();
+hamburgerdisplay()
+aieadisplay()
+holidayDropdown()
+moreDropdown()
+accountsDropdown()
+recentlyViewedDropdown()
+orderStatusDropdown()
+savedItemsDropdown()
+cart_link()
 
-// slider js code
+// // import footer
+
+import { footer } from "./components/footer.js";
+
+let footer_div = document.getElementById('footer');
+footer_div.innerHTML = footer();
+
+// // slider js code
 
 const productContainers = [...document.querySelectorAll('.product-container')];
 const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
@@ -214,7 +230,27 @@ function totalPrice() {
     let total = 0;
     let savePrice = 0;
 
-    let cart_data = JSON.parse(localStorage.getItem("cart_data"));
+    let cart_data = JSON.parse(localStorage.getItem("cart_data")) || [];
+
+    // checking and redirect
+    if(cart_data.length > 0){
+        document.getElementById("cart_empty").style.display = "none"
+
+        let continue_btn_redirect = document.getElementById('continue_btn_redirect')
+        continue_btn_redirect.onclick = () => {
+            window.location.href="payment.html"
+        }
+
+       
+    } else{
+        document.getElementById("cart_empty").style.display = "block"
+
+        let continue_btn_redirect = document.getElementById('continue_btn_redirect')
+        continue_btn_redirect.onclick = () => {
+           alert("Your cart is Empty. First add items to your cart")
+        }
+        
+    }
 
     for(let i=0; i<cart_data.length; i++){
         total += Number(cart_data[i].price);
@@ -285,8 +321,6 @@ function remove(id) {
     append();
     totalPrice();
 }
-
-
 
 
 

@@ -12,7 +12,7 @@
 <body>
     <div class="navbar">
         <div id="logo">
-            <img  src="/royal-stew-1115/logo.png" alt="">
+            <a href="index.html"><img  src="/royal-stew-1115/logo.png" alt=""></a>
         </div>
         <div>
             <a id="returnPage" href="/royal-stew-1115/index.html">Return to Home page</a>
@@ -28,18 +28,18 @@
             </div>
             <br>
             <div>
-                <form>
-                    <input type="email"  name="" id="email" placeholder="Email Address" >
+                <form id="form">
+                    <input type="email"  name="" id="email" placeholder="Email Address" required>
                     <br>
                     <div class="toggleSwitch">
                         <label class="switch">
-                        <input type="checkbox">
+                        <input id="validaty" type="checkbox">
                         <span class="slider round"></span>
                         </label>
                         <p>Show Password</p>
                     </div>
                     
-                    <input type="password" id="password" placeholder="Password">  
+                    <input name=password type=password autocomplete="current-password webauthn" placeholder="password" id="password" required>
                     <br><br>
 
                     <a id="forget" href="">Forgot your password?</a>
@@ -102,3 +102,4 @@
     </div>
 </body>
 </html>
+<script src="signInPage.js"></script>

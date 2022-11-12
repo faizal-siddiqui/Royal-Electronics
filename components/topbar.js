@@ -89,8 +89,8 @@ function topbarFunc(){
               Becoming a Royal Electronics® member comes with easy order tracking,
               rewards, offers and more.
             </p>
-            <button id="topbar_signin">Sign In</button>
-            <button id="topbar_create_account">Create Account</button>
+            <a href = "signInPage.html"><button id="topbar_signin">Sign In</button></a>
+            <a href = "createPage.html"><button id="topbar_create_account">Create Account</button></a>
           </div>
           <div class="accounts_first_part">
             <div>

@@ -16,7 +16,7 @@ import {topbarFunc} from "./components/topbar.js"
 let topbar_div = document.getElementById('topbar')
 topbar_div.innerHTML = topbarFunc()
 
-import {hamburgerdisplay, aieadisplay, holidayDropdown, moreDropdown, accountsDropdown, recentlyViewedDropdown, orderStatusDropdown, savedItemsDropdown} from "./scripts/navbar.js"
+import {hamburgerdisplay, aieadisplay, holidayDropdown, moreDropdown, accountsDropdown, recentlyViewedDropdown, orderStatusDropdown, savedItemsDropdown, cart_link} from "./scripts/navbar.js"
 hamburgerdisplay()
 aieadisplay()
 holidayDropdown()
@@ -25,9 +25,13 @@ accountsDropdown()
 recentlyViewedDropdown()
 orderStatusDropdown()
 savedItemsDropdown()
+cart_link()
 
 
-
+// IMPORT FOOTER
+import {footer} from "./components/footer.js"
+let footer_div = document.getElementById('footer')
+footer_div.innerHTML = footer()
 
 let productData = [
   {
@@ -261,6 +265,7 @@ function append_data(data){
   cards.setAttribute("class", "products_cards")
   cards.onclick = () => {
     addtoDescription(el)
+    
   }
     let append_prod_img = document.createElement("div")
     append_prod_img.setAttribute("class", "append_products_image")
@@ -279,6 +284,9 @@ function append_data(data){
 
             let name = document.createElement("h5")
             name.innerText = el.name;
+            name.onclick = () => {
+              description_redirect()
+            }
 
             let prod_model = document.createElement("div")
             prod_model.setAttribute("class", "product_model")
@@ -409,7 +417,7 @@ function addtoCart(el){
 
 
 function addtoDescription(el){
-  localStorage.setItem("prod_desc", JSON.stringify(el))
+  localStorage.setItem("prod_desc", JSON.stringify([el]))
 }
 
 
@@ -543,4 +551,8 @@ function brand_debouncing(func, time){
 
 }
 
+// DESCRIPTION REDIRECT
 
+function description_redirect(){
+  window.location.href = "description.html"
+}

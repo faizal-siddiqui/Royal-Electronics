@@ -11,7 +11,7 @@
     /* margin-top: 70px; */
 }
 
-#topbar a:hover{
+#topbar > a:hover{
     text-decoration: underline;
 }
 

@@ -2,7 +2,7 @@ function navbar(){
     return `
     <div class="navbar_left">
         <div>
-          <img class="logo" src="./images/logo.png" alt="" />
+          <a href = "index.html"><img class="logo" src="./images/logo.png" alt="" /></a>
         </div>
 
         <div class="ham">
@@ -153,7 +153,7 @@ function navbar(){
           </div>
         </div>
 
-        <div>
+        <div id="cart_redirect">
           <img src="./images/nav_cart.png" alt="" />
           <h4>Cart</h4>
         </div>

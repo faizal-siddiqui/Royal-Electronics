@@ -10,6 +10,37 @@
 //   },]
 
 
+// import Navabar
+// // import navbar here
+
+import { navbar } from "./components/navbar_comp.js";
+
+let navbar_div = document.getElementById('navbar');
+navbar_div.innerHTML = navbar();
+
+import {topbarFunc} from "./components/topbar.js"
+let topbar_div = document.getElementById('topbar')
+topbar_div.innerHTML = topbarFunc()
+
+import {hamburgerdisplay, aieadisplay, holidayDropdown, moreDropdown, accountsDropdown, recentlyViewedDropdown, orderStatusDropdown, savedItemsDropdown, cart_link} from "./scripts/navbar.js"
+
+hamburgerdisplay()
+aieadisplay()
+holidayDropdown()
+moreDropdown()
+accountsDropdown()
+recentlyViewedDropdown()
+orderStatusDropdown()
+savedItemsDropdown()
+cart_link()
+
+// // import footer
+
+import { footer } from "./components/footer.js";
+
+let footer_div = document.getElementById('footer');
+footer_div.innerHTML = footer();
+
 
    let data=JSON.parse(localStorage.getItem("prod_desc"))
 
@@ -56,7 +87,7 @@ let btn12=document.createElement("button")
 btn12.innerText="Add to Cart"
 btn12.id="btn12"
 btn12.addEventListener("click",function(){
-  additem()
+  additem(el)
 })
 let btn13=document.createElement("button")
 btn13.innerText="Build a Bundle"
@@ -71,9 +102,17 @@ price2.append(div2)
 
       })
 
-      function additem(el){
-        cart.push(el)
-       localStorage.setItem("cart_item",JSON.stringify(cart));
+     
 
+
+
+      // localstora
       
+
+
+      function additem(el){
+        let data = JSON.parse(localStorage.getItem("cart_data")) || []
+
+        data.push(el)
+       localStorage.setItem("cart_data",JSON.stringify(data));
       }}

@@ -1,35 +1,33 @@
 
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    body{
-        font-family: sans-serif;
-        background-color:#f0f2f4;
-    }
-   .navbar{ 
-    width: 100%;
-    height: 90px;
-    background-color: #0046be;
-   }
-   .navbar{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    
-    
+  *{
+      margin: 0;
+      padding: 0;
+  }
+  body{
+      font-family: sans-serif;
+      background-color:#f0f2f4;
+  }
+  .navbar{ 
+  width: 100%;
+  height: 70px;
+  background-color: #0046be;
+  }
+  .navbar{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center; 
 }
-#logo>img{
-    width: 12%;
-    
-    padding-left: 130px;
+
+#logo> a>img{
+    width: 9%;
+    padding-left: 80px;
 }
 #returnPage{
     font-weight: bold;
     font-size: 14px;
     color: #ffff;
-    padding-right: 130px
+    padding-right: 80px
 }
 
 
@@ -116,17 +114,19 @@
      gap:10px;
    }
    #signIn{
-    width: 30%;
+    width: 40%;
     margin: auto;
     /* border: 1px solid red; */
     background-color: #FFFF;
     
    }
+   
    #container{
-    width: 75%;
+    width: 80%;
     margin: auto;
     padding: 20px;
    }
+
    input{
     width: 96%;
     margin: auto;
