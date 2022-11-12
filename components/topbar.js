@@ -65,10 +65,10 @@ function topbarFunc(){
               <a href="">Donate to St. Dude</a>
             </div>
             <div>
-              <a href="">Best Buy Outlet</a>
+              <a href="">Royal Electronics Outlet</a>
             </div>
             <div>
-              <a href="">Best Buy Business</a>
+              <a href="">Royal Electronics Business</a>
             </div>
             <div>
               <a href="">╳ Close</a>
@@ -86,7 +86,7 @@ function topbarFunc(){
           <!-- <div id="accounts_pointer" class="pointer"></div> -->
           <div class="accounts_login">
             <p>
-              Becoming a My Best Buy® member comes with easy order tracking,
+              Becoming a Royal Electronics® member comes with easy order tracking,
               rewards, offers and more.
             </p>
             <button id="topbar_signin">Sign In</button>
@@ -121,7 +121,7 @@ function topbarFunc(){
           </div>
           <div class="accounts_third_part">
             <div>
-              <a href="">Best Buy Totaltech</a>
+              <a href="">Royal Electronics Totaltech</a>
             </div>
             <div>
               <a href="">Free Home Consultation</a>

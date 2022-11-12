@@ -1,10 +1,33 @@
-
+// live message
 import {live_message} from "./components/live_message.js"
 let live_mess = document.getElementById('live_message')
 live_mess.innerHTML = live_message()
 
 import {message_script} from "./scripts/live_message_scr.js"
 message_script()
+
+// NAVBAR
+import {navbar} from "./components/navbar_comp.js"
+let nav = document.getElementById("navbar")
+nav.innerHTML = navbar()
+
+// TOPBAR
+import {topbarFunc} from "./components/topbar.js"
+let topbar_div = document.getElementById('topbar')
+topbar_div.innerHTML = topbarFunc()
+
+import {hamburgerdisplay, aieadisplay, holidayDropdown, moreDropdown, accountsDropdown, recentlyViewedDropdown, orderStatusDropdown, savedItemsDropdown} from "./scripts/navbar.js"
+hamburgerdisplay()
+aieadisplay()
+holidayDropdown()
+moreDropdown()
+accountsDropdown()
+recentlyViewedDropdown()
+orderStatusDropdown()
+savedItemsDropdown()
+
+
+
 
 let productData = [
   {

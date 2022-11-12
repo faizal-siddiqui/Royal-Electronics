@@ -119,7 +119,7 @@ function navbar(){
         </div>
 
         <div class="search">
-          <input type="text" placeholder="Search Best Buy" />
+          <input type="text" placeholder="Search Royal Electronics" />
           <div>
             <i id="search_icon" class="fa-solid fa-magnifying-glass"></i>
           </div>

@@ -253,7 +253,7 @@
     display: block;
     padding: 10px;
     width: 70%;
-    height: 60vh;
+    height: auto;
     display: none;
 }
 
@@ -355,7 +355,7 @@
     display: block;
     padding: 10px;
     width: 70%;
-    height: 60vh;
+    height: auto;
     display: none;
 }
 

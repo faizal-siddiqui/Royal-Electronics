@@ -159,7 +159,7 @@
 }
 .arrivalLink{
 /* margin-bottom: ; */
-color: blue;
+color: #0046BE;
 text-decoration: none;
 }
 .arrivalLink:hover{
@@ -188,12 +188,12 @@ color: #063a9f;
    padding-bottom: 20px;
 }
 #viewLink{
-    color: blue;
+    color: #0046be;
     text-decoration: none;
 }
 #viewHeading{
     padding: 10px;
-    color: blue;
+    color: #0046be;
     text-decoration: none;
    
 }
@@ -712,10 +712,10 @@ a:hover {
 }
 .container1 p{
     margin-top: 0px;
-    color: blue;
+    color: #0046be;
 }
 .cont1{
-    border: 0px solid blue;
+    border: 0px solid #0046be;
     margin: auto;
 }
 .cont1:nth-child(1){
@@ -838,7 +838,7 @@ border: 0.5px solid teal;
         margin-left: 250px;
     }p:hover{
        text-decoration: underline;
-       color: blue;
+       color: #0046be;
     }
     #last{
         display: flex;
@@ -847,7 +847,7 @@ border: 0.5px solid teal;
         width: 100%;
         border: 0px solid red;
         height: 140px;
-        background-color: RGB(232 237 242);
+        background-color: #f0f2f4;
 
 
     }#last img{
@@ -864,7 +864,7 @@ border: 0.5px solid teal;
     }#last p{
         font-size: 10px;
         text-align: center;
-        color: rgb(122, 42, 197);
+        color: #0046be;
     }
 
 
@@ -874,14 +874,14 @@ border: 0.5px solid teal;
        #main{
            width: 100%;
            height: 800px;
-           background-color: RGB(232 237 242);;
+           background-color: #f0f2f4 ;;
            /* border: 2px solid rgb(255, 0, 179); */
            padding-left: 20px;
        }
        #footerContainer{
            width: 100%;
            height: 700px;
-           background-color:RGB(232 237 242);;
+           background-color:#f0f2f4;;
            display: flex;
            /* border: 2px solid red; */
        }
@@ -922,9 +922,9 @@ border: 0.5px solid teal;
            
        }
        a{
-           color:blue;
+           color:#0046be;
            text-decoration: none;
-           font-size: 13px;
+           font-size: 12px;
        }
        a:hover{
            color: darkblue;
@@ -962,7 +962,7 @@ border: 0.5px solid teal;
            width: 20%;
            height: 30px;
            color: #FFFFFF;
-           background-color: blue;
+           background-color:#0046be;;
            border-radius: 5px;
            border: none;
        }

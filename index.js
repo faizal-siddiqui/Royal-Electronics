@@ -1,4 +1,4 @@
-
+// NAVBAR
 import {navbar} from "./components/navbar_comp.js"
 
 let navb = document.getElementById("navbar")
@@ -9,11 +9,9 @@ import {topbarFunc} from "./components/topbar.js"
 let topb = document.getElementById("topbar")
 topb.innerHTML = topbarFunc()
 
-
 // scripts
 
 import {hamburgerdisplay, aieadisplay, holidayDropdown, moreDropdown, accountsDropdown, recentlyViewedDropdown, orderStatusDropdown, savedItemsDropdown} from "./scripts/navbar.js"
-
 
 hamburgerdisplay()
 aieadisplay()
@@ -23,6 +21,16 @@ accountsDropdown()
 recentlyViewedDropdown()
 orderStatusDropdown()
 savedItemsDropdown()
+
+// LIVE MESSAGE
+import { live_message } from "./components/live_message.js"
+let live_message_div = document.getElementById('live_message')
+live_message_div.innerHTML = live_message()
+
+import {message_script} from "./scripts/live_message_scr.js"
+message_script()
+
+
 
 
 // Rashmi slider
