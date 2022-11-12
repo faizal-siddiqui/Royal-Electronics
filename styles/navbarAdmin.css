@@ -26,11 +26,15 @@ body{
     width: 90px;
 }
 
-#total{
+#help{
     color: white;
 }
-#total>h4{
+#help>h4{
     margin-top: 10px;
+}
+
+#help>h4:hover{
+    text-decoration: underline;
 }
 
 #signinup>h4{
