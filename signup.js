@@ -5,12 +5,7 @@ function login(){
    for(i=0;i<b.length;i++){ 
 if(document.getElementById("email").value==""||document.getElementById("pass").value==""||document.getElementById("name").value==""){
     alert("please enter someting")
-}else if(b.length<=8&&b[i]!="@"||"#"||"$"||"&"){
-alert("please enter strong password")
-}
-
-
-else{
+}else{
 let obj_data={
     email:a,
     password:b,
