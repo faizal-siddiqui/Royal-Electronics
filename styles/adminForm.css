@@ -75,3 +75,11 @@ tr > th {
   background-color: #5893e4;
   color: white;
 }
+
+#totalData{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

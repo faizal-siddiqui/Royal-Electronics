@@ -12,6 +12,11 @@ form.onsubmit = (event) => {
     proSubmit();
     // diplayTable(savedProducts);
 }
+// appending data onload
+window.onload = (event) => {
+  console.log('page is fully loaded');
+  diplayTable(savedProducts);
+};
 
     let proArr = JSON.parse(localStorage.getItem("productList")) || [];
     function proSubmit() {
@@ -29,7 +34,11 @@ form.onsubmit = (event) => {
       proArr.push(proObj);
       console.log(proArr)
       localStorage.setItem("productList", JSON.stringify(proArr));
+      diplayTable(proArr);
+
     }
+
+    // call total price 
 
     // append data in table
     let savedProducts = JSON.parse(localStorage.getItem("productList")) || [];
@@ -69,7 +78,7 @@ form.onsubmit = (event) => {
 
       }
 
-      diplayTable(savedProducts);
+      // diplayTable(savedProducts);
 
       function removeData(data,index){
         savedProducts = data.filter(function(el,i){
@@ -78,10 +87,29 @@ form.onsubmit = (event) => {
         diplayTable(savedProducts);
     }
 
-      // function removeData(i) {
-      //    savedProducts.splice(i,1);
-      //   console.log(savedProducts);
-
-      //    localStorage.setItem("productList", JSON.stringify(savedProducts));
-      //    displayData(savedProducts);
-      // }
+    function totalPrice() {
+      let total = 0;
+      let count = 0;
+   
+      let productList = JSON.parse(localStorage.getItem("productList"));
+   
+      for(let i=0; i<productList.length; i++){
+          total += Number(productList[i].product_price);
+          count += Number(productList[i].product_count)
+      }
+      total = Math.round(total)
+      console.log(total)
+      count = Math.round(count)
+   
+   
+      localStorage.setItem("total_priceP", JSON.stringify(total))
+      localStorage.setItem("save_priceP", JSON.stringify(count))
+   
+      let priceDisp = document.getElementById("priceS");
+      priceDisp.innerText = total;
+   
+      let countDisp = document.getElementById("countS");
+      countDisp.innerText = count;
+     
+  }
+  
