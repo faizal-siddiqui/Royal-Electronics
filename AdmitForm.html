@@ -15,7 +15,7 @@
 
 <div id="container">
     <!-- form div -->
-    <div id="adminForm">
+    <form id="adminForm">
         <h2>Add Product</h2>
         <input type="text" id="id" placeholder="ID"> <br>
         <input type="text" id="name" placeholder="name"> <br>
@@ -23,8 +23,8 @@
         <input type="text" id="model" placeholder="model"> <br>
         <input type="text" id="image" placeholder="image link"> <br>
         <input type="number" id="proCount" placeholder="No. of product">
-        <button id="create_btn">Create Product</button>
-    </div>
+        <input type="submit" value="Create Product" id="create_btn">
+    </form>
 
     <!-- table div -->
     <div id="appendDiv">
@@ -34,10 +34,9 @@
                 <!--  ID,name,price,model,image,count -->
                 <th>ID</th>
                 <th>Name</th>
-                <th>price</th>
-                <th>model</th>
-                <th>image</th>
-                <th>count</th>
+                <th>Price</th>
+                <th>Model</th>
+                <th>Count</th>
                 <th>Remove</th>
               </tr>
             </thead>

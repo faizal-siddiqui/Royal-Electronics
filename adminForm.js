@@ -7,13 +7,14 @@ navbar_div.innerHTML = navbar2();
 // document.querySelector("form").addEventListener("submit",proSubmit);
 
 let form = document.getElementById('adminForm');
-form.onsubmit = () => {
+form.onsubmit = (event) => {
+    event.preventDefault();
     proSubmit();
 }
 
     let proArr = JSON.parse(localStorage.getItem("productList")) || [];
-    function proSubmit(event) {
-      event.preventDefault();
+    function proSubmit() {
+    //  event.preventDefault(); 
       //ID,name,price,model,image,count
       let proObj = {
         product_id: document.querySelector("#id").value,
@@ -36,39 +37,41 @@ form.onsubmit = () => {
 
     function diplayTable(res) {
         // document.querySelector("tbody").innerHTML = ""; 
+        let container = document.querySelector("tbody");
         res.forEach(function (el) {
         let tr = document.createElement("tr");
   
         let td1 = document.createElement("td");
-        td1.innerText=el.product_name
+        td1.innerText=el.product_id;
   
+
         let td2 = document.createElement("td");
-        td2.innerText=el.product_price;
+        td2.innerText=el.product_name
   
         let td3 = document.createElement("td");
-        td3.innerText=el.product_model;
+        td3.innerText=el.product_price;
   
         let td4 = document.createElement("td");
-        td4.innerText=el.product_id;
-
+        td4.innerText=el.product_model;
+  
         let td5 = document.createElement("td");
-        td3.innerText=el.product_image;
+        td5.innerText=el.product_count;
   
         let td6 = document.createElement("td");
-        td4.innerText=el.product_count;
-  
-        let td7 = document.createElement("td");
-        td5.innerText= "Remove";
-        td5.addEventListener("click", function () {
+        td6.innerText= "Remove";
+        td6.addEventListener("click", function () {
           removeData(el);
         });
   
-        tr.append(td1, td2, td3, td4, td5, td6, td7);
-  
-        document.querySelector("tbody").append(tr);
+        tr.append(td1, td2, td3, td4, td5, td6);
+        container.append(tr);
       });
       }
 
-      function removeData(el) {
+      function removeData(i) {
+         savedProducts.splice(i,1);
+        console.log(savedProducts);
 
+         localStorage.setItem("productList", JSON.stringify(savedProducts));
+         displayData(savedProducts);
       }
