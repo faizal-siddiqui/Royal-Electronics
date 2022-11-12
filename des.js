@@ -1,27 +1,29 @@
-let productData = [
-  {
-    image:
-      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6509/6509652_sd.jpg;maxHeight=200;maxWidth=300",
-    name: 'MacBook Pro 13.3" Laptop - Apple M2 chip - 8GB Memory - 256GB SSD (Latest Model) - Space Gray',
-    price: "1299.00",
-    model: "MacBook",
-    id: 202216,
-    saveprice: "250",
-  },]
+// let productData = [
+//   {
+//     image:
+//       "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6509/6509652_sd.jpg;maxHeight=200;maxWidth=300",
+//     name: 'MacBook Pro 13.3" Laptop - Apple M2 chip - 8GB Memory - 256GB SSD (Latest Model) - Space Gray',
+//     price: "1299.00",
+//     model: "MacBook",
+//     id: 202216,
+//     saveprice: "250",
+//   },]
+
+
 
    let data=JSON.parse(localStorage.getItem("prod_desc"))
 
     display(data)
 
-let maindiv=document.getElementById("main12");
-let price2=document.getElementById("id123")
-let sac1=document.getElementById("sac")
-let sac2=document.getElementById("sac2")
+
 
 var cart=JSON.parse(localStorage.getItem("cart_item"))||[];
 function display(productData){
-  
+  let maindiv=document.getElementById("main12");
+let price2=document.getElementById("id123")
 
+let sac2=document.getElementById("sac2")
+  let sac1=document.getElementById("sac")
       productData.forEach(function(el){
 
 
