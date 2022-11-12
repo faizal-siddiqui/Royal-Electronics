@@ -13,17 +13,21 @@ form.onsubmit = (event) => {
     // diplayTable(savedProducts);
 }
 // appending data onload
-window.onload = (event) => {
-  console.log('page is fully loaded');
-  diplayTable(savedProducts);
-};
+// window.onload = (event) => {
+//   console.log('page is fully loaded');
+//   diplayTable();
+//   totalPrice(); 
+// };
+diplayTable();
+      totalPrice();
 
-    let proArr = JSON.parse(localStorage.getItem("productList")) || [];
+    
     function proSubmit() {
     //  event.preventDefault(); 
+    let proArr = JSON.parse(localStorage.getItem("productList")) || [];
       //ID,name,price,model,image,count
       let proObj = {
-        product_id: document.querySelector("#id").value,
+        id: document.querySelector("#id").value,
         product_name: document.querySelector("#name").value,
         product_price: document.querySelector("#price").value,
         product_model: document.querySelector("#model").value,
@@ -34,24 +38,26 @@ window.onload = (event) => {
       proArr.push(proObj);
       console.log(proArr)
       localStorage.setItem("productList", JSON.stringify(proArr));
-      diplayTable(proArr);
-
+      diplayTable();
+      totalPrice() 
     }
 
     // call total price 
 
     // append data in table
-    let savedProducts = JSON.parse(localStorage.getItem("productList")) || [];
-    let container = document.querySelector("tbody");
 
-    function diplayTable(data) {
+    function diplayTable() {
+      let data = JSON.parse(localStorage.getItem("productList")) || [];
+      console.log(data)
+
+        let container = document.querySelector("tbody");
         container.innerHTML = null;
         
-        data.forEach(function (el, index) {
+        data.forEach((el) => {
         let tr = document.createElement("tr");
   
         let td1 = document.createElement("td");
-        td1.innerText=el.product_id;
+        td1.innerText=el.id;
   
 
         let td2 = document.createElement("td");
@@ -68,25 +74,45 @@ window.onload = (event) => {
   
         let reject = document.createElement("td");
         reject.innerText= "Remove";
-        reject.addEventListener("click", function () {
-          removeData(savedProducts,index);
-        });
+        reject.onclick = () => {
+          // removeData(savedProducts,index);
+          removeData(el.id)
+          // removeData(index)
+        };
   
         tr.append(td1, td2, td3, td4, td5, reject);
-        container.append(tr);
+        container.appendChild(tr);
       });
 
       }
 
       // diplayTable(savedProducts);
 
-      function removeData(data,index){
-        savedProducts = data.filter(function(el,i){
-            return i != index;
-        })
-        diplayTable(savedProducts);
-    }
+    //   function removeData(data,index){
+    //     savedProducts = data.filter(function(el,i){
+    //         return i != index;
+    //     })
+    //     diplayTable(savedProducts);
+    //     totalPrice();
+    // }
 
+
+    // remove data 2nd function 
+    function removeData(id) {
+      console.log(id);
+      let data = JSON.parse(localStorage.getItem("productList"));
+      data = data.filter((el) => {
+          return el.id != id;
+      });
+   console.log(data);
+      localStorage.setItem("productList", JSON.stringify(data));
+      diplayTable();
+      totalPrice();
+  }
+  
+
+
+    // count total price and total item
     function totalPrice() {
       let total = 0;
       let count = 0;
