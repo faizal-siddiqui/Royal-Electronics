@@ -108,44 +108,66 @@ hr{
 }
 
 /* grid */
-#container {
+/* #container {
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(3,1fr);
         gap: 20px;
-        /* height: auto; */
         width: 95%;
         padding-top: 30px;
-        /* border: 1px solid red; */
+        border: 1px solid red;
         margin: auto;
         margin-bottom: 30px;
         grid-template-areas: 
         "a a d"
         "b b d"
         "c c d";
-    }
+    } */
 
+   #container{
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    padding-top: 30px;
+    /* border: 1px solid red; */
+    margin-left: 3%;
+    margin-bottom: 30px;
+   }
     #container>div {
         background-color: #fff;
         padding: 30px;
     }
 
-    #container > div:nth-child(1) {
+    #leftDiv{
+        /* border: 1px solid teal; */
+        width: 60%;
+
+    }
+    #rightDiv{
+        /* border: 1px solid teal; */
+        width: 37%;
+    }
+    /* #container > div:nth-child(1) {
     grid-area: a;
     height: auto;
   }
 
   #container > div:nth-child(2) {
     grid-area: b;
-    height: auto;
+    
+    height: 400px;
+    margin-top: 0;
   }
 
   #container > div:nth-child(3) {
     grid-area: c;
-    height: auto;
+    
+    height: 400px;
+    margin-top: 0;
   }
 
   #container > div:nth-child(4) {
     grid-area: d;
-    height: auto;
-  }
+    height: 800px;
+    position: sticky;
+  } */
