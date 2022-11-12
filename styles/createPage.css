@@ -1,0 +1,236 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        font-family: sans-serif;
+        background-color:#f0f2f4;
+    }
+   .navbar{ 
+    width: 100%;
+    height: 90px;
+    background-color: #0046be;
+   }
+   .navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+#logo>img{
+    width: 12%;
+    
+    padding-left: 130px;
+}
+#returnPage{
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffff;
+    padding-right: 130px
+}
+
+   .switch {
+     position: relative;
+     display: inline-block;
+     width: 60px;
+     height: 34px;
+   }
+   .switch input {
+     opacity: 0;
+     width: 0;
+     height: 0;
+   }
+   .slider {
+     position: absolute;
+     cursor: pointer;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: #ccc;
+     -webkit-transition: .4s;
+     transition: .4s;
+     
+   }
+   .slider:before {
+     position: absolute;
+     content: "";
+     height: 26px;
+     width: 26px;
+     left: 4px;
+     bottom: 4px;
+     background-color: white;
+     -webkit-transition: .4s;
+     transition: .4s;
+     top: 1px;
+   }
+   
+   input:checked + .slider {
+     background-color: #2196F3;
+   }
+   
+   input:focus + .slider {
+     box-shadow: 0 0 1px #2196F3;
+   }
+   
+   input:checked + .slider:before {
+     -webkit-transform: translateX(26px);
+     -ms-transform: translateX(26px);
+     transform: translateX(26px);
+   }
+   
+   .slider.round {
+     border-radius: 35px;
+     /* border: 1px solid green; */
+     height: 25px;
+     width: 50px;
+   }
+   
+   .slider.round:before {
+     border-radius: 50%;
+     /* border: 1px solid red; */
+     height: 20px;
+     width: 20px;
+    
+   }
+   .toggleSwitch{
+     display: flex;
+     width:100%;    
+     justify-content: flex-end;
+     align-items: center;
+     gap:10px;
+     margin-top: 3px;
+     /* border: 1px solid red; */
+
+     
+   }
+  .toggleSwitch>p{
+     margin:10px;
+  }
+   .checkbox{
+     display: flex;
+     gap:10px;
+   }
+   #signIn{
+    width: 30%;
+    margin: auto;
+    /* border: 1px solid red; */
+    background-color: #FFFF;
+    
+   }
+   #container{
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+   }
+   input{
+    width: 96%;
+    margin: auto;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    padding-left: 5px;
+    border: 1px solid grey;
+   }
+   button{
+    width: 100%;
+    margin: auto;
+    height: 40px;
+    border-radius: 5px;
+   }
+   p{
+    font-size: 13px;
+   }
+   #orSection{
+    display: flex;
+    padding: 10px;
+   }
+   #orSection>div{
+    display: flex;
+    width: 48%;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+   }
+   h2{
+    text-align: center;
+   }
+   #sign{
+    background-color: #0046be;
+    color: aliceblue;
+    border: none;
+    width: 100%;
+   }
+   #sign:hover{
+        background-color: darkblue;
+   }
+   .orContainer{
+        background-color: white;
+        color: #0046be;
+        font-weight: bold;
+        border: 1px solid #0046be;
+   }
+   .orContainer:hover{
+        background-color: darkblue;
+        color: white;
+   }
+   #apple{
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        border: 1px solid black;
+   }
+   #apple:hover{
+        background-color: black;
+        color: white;
+   }
+   #forget{
+    font-size: small;
+    text-decoration: none;
+   }
+   #forget:hover{
+        color: darkblue;
+        text-decoration: underline;
+   }
+   a{
+    font-size: 12px;
+    color: #0046be;
+    text-decoration: none;
+   }
+a:hover{
+    color: darkblue;
+    text-decoration: underline;
+}
+
+
+
+.terms{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 150px;
+}
+
+#fs{
+  font-size: 13px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 20px;
+  font-size: 13px;
+}
+hr{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.pl{
+  padding-left: 15px;
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
