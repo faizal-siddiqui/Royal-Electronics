@@ -43,3 +43,27 @@ input{
     border:1px solid #0046be;
     color: #0046be;
 }
+
+/* table css */
+table,
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+tr > th {
+  background-color: #5893e4;
+  color: white;
+}

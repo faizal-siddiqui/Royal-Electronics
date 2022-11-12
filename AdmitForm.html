@@ -7,9 +7,9 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="./styles/adminForm.css">
-<!-- <link rel="stylesheet" href="./styles/navbarAdmin.css"> -->
+<link rel="stylesheet" href="./styles/navbarAdmin.css">
 <body>
-    <div id="navbar">
+    <div id="navbar2">
         <!-- imported navbar will be appended here -->
     </div>
 
@@ -21,16 +21,33 @@
         <input type="text" id="name" placeholder="name"> <br>
         <input type="number" id="price" placeholder="price"> <br>
         <input type="text" id="model" placeholder="model"> <br>
-        <input type="file" id="image" placeholder="image link"> <br>
+        <input type="text" id="image" placeholder="image link"> <br>
+        <input type="number" id="proCount" placeholder="No. of product">
         <button id="create_btn">Create Product</button>
     </div>
 
     <!-- table div -->
     <div id="appendDiv">
-
+        <table>
+            <thead>
+              <tr>
+                <!--  ID,name,price,model,image,count -->
+                <th>ID</th>
+                <th>Name</th>
+                <th>price</th>
+                <th>model</th>
+                <th>image</th>
+                <th>count</th>
+                <th>Remove</th>
+              </tr>
+            </thead>
+            <tbody id="body">
+              <!-- Append your output to tbody -->
+            </tbody>
+          </table>
     </div>
 </div>
 </body>
 </html>
 
-<script type="module" src="./scripts/adminForm.js"></script>
+<script type="module" src="adminForm.js"></script>
