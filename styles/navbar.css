@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+#navbar{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    padding: 15px 20px;
+    background-color: #0046be;
+    color: #fff;
+    position: relative;
+    z-index: 30;
+}
+
+.navbar_left{
+    /* border: 2px solid black; */
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* logo */
+.logo{
+    width: 100%;
+}
+
+.navbar_left > div:nth-child(1){
+    /* width: 40px; */
+    /* height: 40px; */
+    /* border-radius: 50%; */
+    /* border: 2px solid black; */
+    /* overflow: hidden; */
+}
+.navbar_left > div img{
+    width: 35px;
+    height: 32px;
+    padding: 3px;
+}
+
+.ham{
+    display: flex;
+    
+}
+
+.ham img{
+    display: block;
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+.ham > h4, .navbar_right h4, .search{
+    display: flex;
+    align-items: center;
+}
+
+.ham > img:nth-child(2){
+    display: none;
+}
+
+.search{
+    width: 60%;
+    /* border: 2px solid green; */
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+.search > input{
+    width: 100%;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    background-color: #fff;
+}
+
+.search > div > i{
+    color: #0046be;
+    padding-right: 10px;
+}
+
+.navbar_right{
+    display: flex;
+    /* border: 2px solid black; */
+    width: 20%;
+    justify-content: space-between;
+}
+
+.navbar_right > div > div:nth-child(1){
+    display: flex;
+}
+
+.navbar_right> div{
+    display: flex;
+}
+
+
+/* .navbar_right h3{
+    display: flex;
+    align-items: center;
+} */
+
+/* MENU   DROPDOWN */
+
+.menu_dropdown{
+    display: none;
+    position: absolute;
+    width: 27%;
+    height: 100vh;
+    /* border: 2px solid red; */
+    background-color: #fff;
+    z-index: 20;
+}
+
+.menu_dropdown {
+    left: 5px;
+    top: 70px;
+    overflow-y: scroll;
+    background-color: rgba(233, 227, 227, 0.975);
+}
+
+.upper_menu_dropdown_icon{
+    border: 1.5px solid blue;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    border-left-color:#fff;
+    border-bottom-color:#fff;
+    margin-right: 10px;
+}
+
+.menu_dropdown > div>div{
+    display: flex;
+    border-top: 1px solid grey;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    
+}
+
+.menu_dropdown > div>div:nth-child(1){
+    border: none;
+}
+
+.menu_dropdown > div{
+    padding: 10px;
+    padding-bottom: 15px;
+}
+
+.menu_dropdown > div:nth-child(2){
+    padding-bottom: 110px;
+}
+
+.menu_dropdown > div>div > a{
+    /* border: 1px solid maroon; */
+    text-decoration: none;
+    font-size: 13px;
+    color: #0046be;
+}
+
+.menu_dropdown > div>div > a> span{
+    font-size: 16px;
+}
+
+.upper_menu_dropdown, .lower_menu_dropdown{
+    background-color: #fff;
+}
+
+.lower_menu_dropdown{
+    margin-top: 7px;
+}
+
+.upper_menu_dropdown{
+    border-bottom: 1px solid grey;
+}
+
+.upper_menu_dropdown a{
+  font-weight: bold;
+}
+
+.lower_menu_dropdown > div > h4{
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+/* AIEA DROPDOWN */
+
+.aiea_dropdown{
+    position: absolute;
+    width: 28%;
+    height: auto;
+    left:70%;
+    top: 70px;
+    /* border: 2px solid mediumblue; */
+    display: none;
+    background-color: #fff;
+    z-index: 20;
+}
+
+.aiea_dropdown{
+    color: black;
+    padding: 10px;
+}
+
+#aiea_dropdown_btn{
+    cursor: pointer;
+}
+
+#rotate_pointer{
+    /* border: 2px solid red; */
+    transform: rotate(45deg);
+    width: 5%;
+    height: 15px;
+    position: absolute;
+    top: -7px;
+    left: 46%;
+    background-color: white;
+}
+
+.aiea_dropdown > div:nth-child(1) ~ div{
+    display: flex;
+    /* border: 2px solid red; */
+    margin-top: 10px;
+    font-size: 12px;
+    justify-content: space-between;
+}
+
+#aiea_address{
+    width: 60%;
+}
+
+#aiea_address + div > a, .time a{
+    text-decoration: none;
+    color: #0046be;
+}
+
+.aiea_button{
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #0046be;
+    outline: none;
+    color: #0046be;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+.aiea_button:hover{
+    transition: 0.5s;
+    width: 100%;
+    background-color: #1c3387;
+    color: #fff;
+}
+
+#aiea_head{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+#close_aiea_dropdown:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+#time_color{
+    color: #378407;
+}
+
