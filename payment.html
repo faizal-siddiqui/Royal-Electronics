@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/payment.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <nav id="navbar"></nav> -->
+
+    <div id="payments_div">
+      <a href="#"> Back to Pickup & Delivery Options</a>
+      <h3>Payment Information</h3>
+      <div id="parent_order_div">
+        <div class="store_div">
+          <div class="store_first_div">
+            <p>Credit or Debit Card Number</p>
+            <input id="credit_no" type="number" />
+            <div>
+              <img
+                src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MBBVC_YellowEdge_Contactless_RGB_Final-9736ce9f-b00a-43ea-a36b-d6fbce539f4e.png"
+                alt=""
+              />
+              <img
+                src="https://pisces.bbystatic.com/image2/vector/BestBuy_US/Gallery/payment-amex-217866.svg"
+                alt=""
+              />
+              <img
+                src="https://pisces.bbystatic.com/image2/vector/BestBuy_US/Gallery/payment-discover-217870.svg"
+                alt=""
+              />
+              <img
+                src="https://pisces.bbystatic.com/image2/vector/BestBuy_US/Gallery/payment-jcb-217873.svg"
+                alt=""
+              />
+              <img
+                src="https://pisces.bbystatic.com/image2/vector/BestBuy_US/Gallery/payment-mastercard-217874.svg"
+                alt=""
+              />
+              <img
+                src="https://pisces.bbystatic.com/image2/vector/BestBuy_US/Gallery/payment-unionpay-217878.svg"
+                alt=""
+              />
+            </div>
+            <div><a href="">Other payment options</a></div>
+            <div>
+              <a href=""
+                >Use a Royal Electronics Gift Card, Store Credit or Discount Code</a
+              >
+            </div>
+            <p>Billing Address</p>
+            <div class="address_form">
+              <div>
+                <div>
+                  <p>First Name</p>
+                  <p>
+                    <input id="first_name" type="text" />
+                  </p>
+                </div>
+
+                <div>
+                  <p>Last Name</p>
+                  <input id="last_name" type="text" />
+                </div>
+              </div>
+              <div>
+                <p>Address</p>
+                <p>Military (AFO.FPO) |International Customers</p>
+              </div>
+              <div>
+                <input id="address" type="text" />
+              </div>
+              <div>
+                <div>
+                  <p>City</p>
+                  <input id="city" type="text" />
+                </div>
+                <div>
+                  <p>State</p>
+                  <input id="state" type="text" />
+                </div>
+                <div>
+                  <p>Zip Code</p>
+                  <input id="zipcode" type="text" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="store_second_div">
+            <div>
+              <h5>Your Offers & Rewards</h5>
+              <p>Member # 5294792761</p>
+            </div>
+            <div>
+              <h5>You don’t have any reward certificates.</h5>
+              <a href="">Missing a certificate?</a>
+            </div>
+          </div>
+          <div class="store_third_div">
+            <h3>Want to help us fight childhood cancer?</h3>
+            <img
+              src="https://www.bestbuy.com/~assets/bby/_com/st-jude-large-view-checkout-60b3a3a2c7027e50272a73e9eba22ef2.png"
+              alt=""
+            />
+            <p>
+              $2 donations can provide IV bags for patients undergoing
+              treatment.
+            </p>
+            <p>
+              $5 donations can provide thermometers and snack bags for families.
+            </p>
+            <p>
+              $10 donations can provide new toys for play areas and housing
+              facilities.
+            </p>
+
+            <h5>Choose a donation amount:</h5>
+            <div>
+              <button>$2</button>
+              <button>$5</button>
+              <button>$10</button>
+              <button>other</button>
+            </div>
+            <p>
+              Donations are tax-deductible as allowed by law and will be charged
+              to the credit card used on your Royal Electronics order as a separate
+              transaction on your credit card statement.
+            </p>
+          </div>
+          <div class="store_fourth_div">
+            <p>
+              By placing your order, you agree to our
+              <a href="">RoyalElectronics.com Terms and Conditions</a> and our
+              <a href="">Privacy Policy.</a>
+            </p>
+            <button id="place_order_btn">Place your Order</button>
+          </div>
+        </div>
+        <div class="order_summary">
+          <h4>Order Summary</h4>
+          <div id="order_append"></div>
+          <div>
+            <div>
+              <p>Item Subtotal</p>
+              <p id="item_subtotal_price">0</p>
+            </div>
+            <div>
+              <p>Store Pickup</p>
+              <p>FREE</p>
+            </div>
+            <div>
+              <p>Estimated Sales Tax</p>
+              <p id="estimated_tax_price">0</p>
+            </div>
+            <a href="">Apply Royal Electronics Tax Exempt Account Number</a>
+          </div>
+          <div>
+            <p>You’re saving <span id="save_amount">$150</span> on your order today!</p>
+            <div>
+              <h3>Total</h3>
+              <h3 id="subtotal_price">0</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="payment.js"></script>
