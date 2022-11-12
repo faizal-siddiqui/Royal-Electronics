@@ -1,3 +1,11 @@
+
+import {live_message} from "./components/live_message.js"
+let live_mess = document.getElementById('live_message')
+live_mess.innerHTML = live_message()
+
+import {message_script} from "./scripts/live_message_scr.js"
+message_script()
+
 let productData = [
   {
     image:
@@ -155,6 +163,7 @@ let productData = [
   },
 ];
 
+totalprod(productData)
 append_data(productData)
 
 
@@ -512,16 +521,3 @@ function brand_debouncing(func, time){
 }
 
 
-// MESSAGE WINDOW
-
-let show_drop_up = document.getElementById("show_drop_up")
-show_drop_up.onclick = () => {
-  document.getElementById("open_window").style.display = "block"
-  
-}
-
-let close_message = document.getElementById("close_message")
-close_message.onclick = () => {
-  document.getElementById("open_window").style.display = "none"
-
-}
