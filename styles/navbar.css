@@ -29,12 +29,16 @@ body{
 }
 
 /* logo */
+.logo{
+    width: 100%;
+}
+
 .navbar_left > div:nth-child(1){
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    /* width: 40px; */
+    /* height: 40px; */
+    /* border-radius: 50%; */
     /* border: 2px solid black; */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .navbar_left > div img{
     width: 35px;

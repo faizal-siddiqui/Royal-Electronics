@@ -555,7 +555,7 @@ a:hover {
 }
 
 .product-container {
-    padding: 0 10vw;
+    padding: 0 10px;
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
