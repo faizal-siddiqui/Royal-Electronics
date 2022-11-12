@@ -227,8 +227,12 @@ function totalPrice() {
 
     localStorage.setItem("total_price", JSON.stringify(total))
     localStorage.setItem("save_price", JSON.stringify(savePrice))
+
     let priceDisp = document.getElementById("cart_total");
     priceDisp.innerText = total;
+
+    let savingDisp = document.getElementById("save_total");
+    savingDisp.innerText = savePrice;
     
     // if(total>0){
     //    let continue_btn = document.getElementById("continue_btn");
