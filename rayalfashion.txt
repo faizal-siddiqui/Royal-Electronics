@@ -1,0 +1,10 @@
+status -> project merge successfully
+
+
+Faizal Siddiqui -> Navbar, Topbar, signin page, products page, payment page 
+
+Rashmi -> parts of homepage(slider), cart page, admin page
+
+Mrunali -> parts of homepage, sign in,  signup
+
+Sachin -> part of homepage, product description page
