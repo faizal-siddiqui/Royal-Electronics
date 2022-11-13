@@ -56,7 +56,7 @@ function place_order_click(){
     place_order_btn.onclick = () => {
         let name = getname()
 
-        let sign = prompt("PLease Enter your orp here");
+        let sign = prompt("PLease Enter your otp here");
 
         if (sign == 8840) {
             alert(`Your order is Successful Thank You so much ${name[0]} ${name[1]} for choosing us`)
