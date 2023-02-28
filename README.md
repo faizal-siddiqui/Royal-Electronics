@@ -1,6 +1,24 @@
 # Royal-Electronics
 An online electronic gadgets store that will allow customers to browse and purchase electronic items from the comfort of their homes.  It includes features like Products filters, Cart functionality, Payment and User Authentication.
 
+## Tech Stack Used
+ - HTML
+ - CSS
+ - Javascript
+ 
+### Database
+ - local Storage
+ 
+ ## Pages
+ - Landing Page
+ - Products Page
+ - Products Details Page
+ - Cart Page
+ - Payment Page
+ - Sign Up Page
+ - Login Page
+ 
+
 ## Team Members
  - Faizal Siddiqui (Team Lead)
  - Rashmi Patel
